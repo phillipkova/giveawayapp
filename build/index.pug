@@ -1,12 +1,14 @@
 doctype html
 head
-  // Required meta tags
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
   link(rel='stylesheet' href='/css/main.css')
   title GiveawayApp
-nav.navbar.navbar-expand-lg.navbar-light.bg-light
-  a.navbar-brand(href='#') GiveawayApp
+
+
+nav.navbar.navbar-expand-lg.navbar-dark.navbar-transparent
+  a.navbar-brand(href='index.html')
+    <img src="img/logo.png" width="125" class="d-inline-block align-top" alt="">
   button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
@@ -21,6 +23,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
         a.nav-link(href='#') Pricing
       li.nav-item
         button.btn.btn-success(type='button') Join Now
+
 
 section.jumbotron
   .container
@@ -48,76 +51,78 @@ section.jumbotron
           input#customControlInline.custom-control-input(type='checkbox')
           label.custom-control-label(for='customControlInline') Hide Entered
 
+
 section.giveaway-results-main.container
   h4.h4 Hottest Giveaways
   .row
     .col-md-4
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining(data-toggle='tooltip', data-html='true', title='<b>Time Remaining</b>')
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<b>Time Remaining</b>')
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method(data-toggle='tooltip', data-html='true', title='<b>Entry Method:</b> Gleam')
+          span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<b>Entry Method:</b> Gleam')
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
 
     .col-md-4
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
 
     .col-md-4
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
 
-section.giveaway-results.container
+
+section.giveaway-tn-results.container
   .btn-group.mt-5.mb-4(role='group')
     button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
       | Newest
@@ -129,254 +134,254 @@ section.giveaway-results.container
 
   .row
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item.entered
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item.entered
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 10 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-item
-        .giveaway-header
-          span.giveaway-time-remaining
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
             svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
               path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
               path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
             span 3 Days
-          span.giveaway-entry-method
+          span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-product-image
+        .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-titles
-          .giveaway-prize-name Amazon Echo
-          .giveaway-value $200 Value
-        .giveaway-cta
-          a.btn.btn-primary.btn-block(href="#") View Details
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
             span.icon.icon-heart * 
             span Save

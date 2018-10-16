@@ -1,0 +1,163 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(rel='stylesheet' href='/css/main.css')
+  title GiveawayApp
+
+
+nav.navbar.navbar-expand-lg.navbar-dark.navbar-transparent
+  a.navbar-brand(href='index.html')
+    <img src="img/logo.png" width="125" class="d-inline-block align-top" alt="">
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.ml-auto
+      li.nav-item.active
+        a.nav-link(href='#')
+          | Giveaways 
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href='#') Winners
+      li.nav-item
+        a.nav-link(href='#') Pricing
+      li.nav-item
+        button.btn.btn-success(type='button') Join Now
+
+
+section.jumbotron
+
+
+section.giveaway-prize-wrapper
+  .container
+    .row
+      .col
+      .col-10 
+        .giveaway-prize
+          .row
+            .giveaway-info-primary.col-sm-8
+              h2.h1 Amazon Echo
+              p.lead Smart Bluetooth Speaker & Assistant
+              .giveaway-image-wrap
+                img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+            .giveaway-info-secondary.col-sm-4
+              .giveaway-metadata-wrap
+                .metadata-item.mb-5
+                  p.subtitle Giveaway Ends In
+                  span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<b>Giveaway-tn ends in:</b>')
+                    svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
+                      path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                      path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                      path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                    span 3 Days
+                .metadata-item.mb-5
+                  div
+                    p.subtitle Prize Value
+                    .display-4 $80
+                  div
+                    p.subtitle You Pay
+                    .display-4.text-success $0
+                .metadata-item.mb-5
+                  p.subtitle Entry Method
+                  span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<b>Entry Method:</b> Gleam')
+                    img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+              .giveaway-cta-wrap
+                a.btn.btn-success.btn-block.btn-lg(href="#") Enter Giveaway
+                a.btn.btn-outline-secondary.btn-block.btn-lg(href="#") Get it on Amazon
+
+                  
+
+
+
+
+      .col
+
+
+section.giveaway-results-main.container
+  h4.h4 Giveaways for you
+  .row
+    .col-md-4
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<b>Giveaway-tn ends in:</b>')
+            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
+              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            span 3 Days
+          span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<b>Entry Method:</b> Gleam')
+            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+        .giveaway-tn-product-image
+          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
+          button.btn.btn-outline-secondary.btn-block
+            span.icon.icon-heart * 
+            span Save
+
+    .col-md-4
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
+            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
+              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            span 3 Days
+          span.giveaway-tn-entry-method
+            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+        .giveaway-tn-product-image
+          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
+          button.btn.btn-outline-secondary.btn-block
+            span.icon.icon-heart * 
+            span Save
+
+    .col-md-4
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
+            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
+              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            span 3 Days
+          span.giveaway-tn-entry-method
+            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+        .giveaway-tn-product-image
+          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
+          button.btn.btn-outline-secondary.btn-block
+            span.icon.icon-heart * 
+            span Save
+
+
+footer.text-center.my-5
+  ul.list-inline
+    li.list-inline-item
+      a(href="#") Disclaimer
+    li.list-inline-item
+      a(href="#") Privacy Policy
+    li.list-inline-item
+      a(href="#") Terms of Use
+    li.list-inline-item
+      a(href="#") Submit Giveaway
+    li.list-inline-item
+      a(href="#") Contact
+  p.text-center ©2018 GiveAway.App All rights reserved
+
+
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(type='text/javascript' src='/js/bootstrap.bundle-min.js')
+script(type='text/javascript' src='/js/scripts-min.js')

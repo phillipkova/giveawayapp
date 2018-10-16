@@ -1,16 +1,8 @@
-@import 'bootstrap.scss';
-@import 'components/cards.scss';
-@import 'components/general.scss';
+@import 'bootstrap/bootstrap.scss';
 
-.giveaway-search {
-  position: relative;
-  top: 100px;
-  padding: 20px;
-  background: white;
-  box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.18);
-  border-radius: 70px;
-}
-
-.giveaway-results-main {
-  margin-top: 150px;
-}
+@import 'components/_buttons.scss';
+@import 'components/_giveaway-thumbnail.scss';
+@import 'components/_general.scss';
+@import 'components/_header.scss';
+@import 'components/_jumbotron.scss';
+@import 'components/_giveaway-prize-large.scss';
