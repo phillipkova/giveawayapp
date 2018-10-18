@@ -53,7 +53,9 @@ section.jumbotron
 
 
 section.giveaway-results-main.container
-  h4.h4 Hottest Giveaways
+  .row.justify-content-between.mb-3
+    .col
+      h4.h4 Hottest Giveaways
   .row
     .col-md-4
       .giveaway-tn-item
@@ -123,14 +125,16 @@ section.giveaway-results-main.container
 
 
 section.giveaway-tn-results.container
-  .btn-group.mt-5.mb-4(role='group')
-    button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-      | Newest
-    .dropdown-menu(aria-labelledby='btnGroupDrop1')
-      a.dropdown-item(href='#') Ending Soonest 
-      a.dropdown-item(href='#') Most Popular
-      a.dropdown-item(href='#') Highest Price
-      a.dropdown-item(href='#') Lowest Price
+  .row.justify-content-between.mb-3
+    .col
+      .btn-group.mt-5.mb-4(role='group')
+        button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          | Newest
+        .dropdown-menu(aria-labelledby='btnGroupDrop1')
+          a.dropdown-item(href='#') Ending Soonest 
+          a.dropdown-item(href='#') Most Popular
+          a.dropdown-item(href='#') Highest Price
+          a.dropdown-item(href='#') Lowest Price
 
   .row
     .col-sm-6.col-md-4.col-lg-3

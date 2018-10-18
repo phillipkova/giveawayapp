@@ -1,5 +1,11 @@
 .giveaway-prize-wrapper {
+  margin-top: -100px;
 
+  .giveaway-save-button {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+  }
 }
 
 .giveaway-prize {
@@ -8,18 +14,61 @@
   border-radius: 10px;
 
   .giveaway-info-primary {
+    padding: 60px 30px;
     text-align: center;
   }
 
   .giveaway-image-wrap {
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     img {
-      max-width: 320px;
+      max-width: 400px;
     }
   }
 
   .giveaway-info-secondary {
+    position: static;
+    margin: 0 15px;
+    padding: 60px 30px 60px 30px;
+    border-top: 2px dashed #CDD0DC;
 
+    .metadata-item {
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 2px solid #F3F4F7;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    .display-4 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .giveaway-prize-wrapper {
+
+  }
+
+  .giveaway-prize { 
+
+    .giveaway-info-primary {  
+    }
+
+    .giveaway-image-wrap {  
+
+      img { 
+      }
+    }
+
+    .giveaway-info-secondary {
+      margin: auto;
+      border: none;
+      border-left: 2px dashed #CDD0DC;
+      padding-right: 55px;
+    }
   }
 }

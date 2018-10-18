@@ -29,6 +29,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/build/img/clock.png": {
+		"ft": 32768,
+		"iS": 810,
+		"oA": 0,
+		"oAP": "/img/clock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/build/img/jumbotron-lg.jpg": {
 		"ft": 16384,
 		"iS": 135284,
@@ -1246,6 +1257,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/build/scss/components/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/css/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/build/scss/css/bootstrap-grid.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1279,6 +1303,26 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/build/svg/clock.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/clock.svg",
+		"oF": 2,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/build/svg/gleam.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/gleam.svg",
+		"oF": 2,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/css/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1288,6 +1332,24 @@
 		"oAP": "/css/main-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/home-ol.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/home-ol.html",
+		"oF": 0
+		},
+	"/img/clock.png": {
+		"ft": 32768,
+		"iS": 764,
+		"oA": 0,
+		"oAP": "/img/clock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/jumbotron-lg.jpg": {
 		"ft": 16384,
@@ -1344,6 +1406,16 @@
 		"oA": 0,
 		"oAP": "/prize.html",
 		"oF": 0
+		},
+	"/svg/clock.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/clock.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		}
 	},
 "hooks": [

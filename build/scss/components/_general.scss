@@ -2,6 +2,14 @@ body {
   background-color: #F6F7F9;
 }
 
+img {
+  max-width: 100%;
+
+  &.img-scale {
+    width: 100%;
+  }
+}
+
 .giveaway-search {
   position: relative;
   top: 100px;
