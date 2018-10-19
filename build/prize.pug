@@ -2,6 +2,7 @@ doctype html
 head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(href='https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900', rel='stylesheet')
   link(rel='stylesheet' href='/css/main.css')
   title GiveawayApp
 
@@ -37,14 +38,14 @@ section.giveaway-prize-wrapper
           .row
             .giveaway-info-primary.col-lg-8
               .giveaway-save-button.d-lg-none
-                button.btn.btn-secondary(data-toggle='tooltip', data-html='true', title='<b>Save Giveaway</b>') ❤️
-              h2.h1 Amazon Echo
-              p.lead Smart Bluetooth Speaker & Assistant
+                button.btn.btn-save(data-toggle='tooltip', data-html='true', title='<div class="display-4">Save Giveaway</div>')
+              h2.h2 Amazon Echo
+              p.subheading Smart Bluetooth Speaker & Assistant
               .giveaway-image-wrap
                 img.img-scale(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
             .giveaway-info-secondary.col-lg-4
               .giveaway-save-button.d-none.d-lg-block
-                button.btn.btn-secondary(data-toggle='tooltip', data-html='true', title='<b>Save Giveaway</b>') ❤️
+                button.btn.btn-save(data-toggle='tooltip', data-html='true', title='<div class="display-4">Save Giveaway</div>')
               .giveaway-metadata-wrap
                 .metadata-item
                   .display-4 Giveaway Ends In
@@ -66,8 +67,12 @@ section.giveaway-prize-wrapper
                     img.mr-3(src="svg/gleam.svg")
                     span.display-3 Gleam
               .giveaway-cta-wrap
-                a.btn.btn-success.btn-block.btn-lg.mb-3(href="#") Enter Giveaway
-                a.btn.btn-outline-secondary.btn-block.btn-lg(href="#") Get it on Amazon
+                a.btn.btn-success.btn-icon.btn-block.btn-lg.mb-4(href="#") 
+                  span.icon.icon-ticket
+                  | Enter Giveaway
+                a.btn.btn-outline-secondary-alt.btn-icon.btn-block.btn-lg(href="#")
+                  | Get it on
+                  span.icon.icon-amazon
       .col-xl
 
 

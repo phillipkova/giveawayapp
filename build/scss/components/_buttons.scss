@@ -1,3 +1,60 @@
 .btn-success, .btn-primary {
   @extend .text-white;
 }
+
+.btn-outline-secondary-alt {
+  color: #343C60;
+  border: 3px solid #F3F4F7;
+  background-color: white;
+
+  &:hover {
+    color: inherit;
+    background-color: white;
+    border-color: #dedede;
+  }
+}
+
+.btn-save {
+  height: 38px;
+  width: 38px;
+  background-color: #CDD0DC;
+  border: none;
+  border-radius: 50px;
+  background-image: url('../svg/heart.svg');
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover, &:focus {
+    background-color: $red;
+    box-shadow: none;
+  }
+}
+
+.btn-icon {
+  position: relative;
+
+  .icon {
+    display: inline-block;
+    position: relative;
+  }
+
+  .icon-ticket {
+    height: 21px;
+    width: 25px;
+    top: 3px;
+    left: -15px;
+    background-image: url(../svg/ticket-white.svg);
+    background-repeat: no-repeat;
+  }
+
+  .icon-amazon {
+    height: 22px;
+    width: 72px;
+    top: 9px;
+    left: 8px;
+    background-image: url(../img/amazon-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

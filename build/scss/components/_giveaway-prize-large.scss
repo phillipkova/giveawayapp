@@ -1,10 +1,10 @@
 .giveaway-prize-wrapper {
-  margin-top: -100px;
+  margin-top: -90px;
 
   .giveaway-save-button {
     position: absolute;
-    top: 20px;
-    right: 35px;
+    top: 25px;
+    right: 40px;
   }
 }
 
@@ -14,7 +14,16 @@
   border-radius: 10px;
 
   .giveaway-info-primary {
-    padding: 60px 30px;
+    padding: 80px 60px 30px;
+    text-align: center;
+  }
+
+  .subheading {
+    margin-top: 15px;
+    color: #CDD0DC;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -22,12 +31,11 @@
     margin-top: 2rem;
 
     img {
-      max-width: 400px;
+      max-width: 450px;
     }
   }
 
   .giveaway-info-secondary {
-    position: static;
     margin: 0 15px;
     padding: 60px 30px 60px 30px;
     border-top: 2px dashed #CDD0DC;
@@ -45,6 +53,26 @@
     .display-4 {
       margin-bottom: 10px;
     }
+
+    &:before, &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      top: -13px;
+      border-radius: 50px;
+    }
+
+    &:before {
+      left: -13px;
+      background-image: linear-gradient(to right, #eff3fb , #e0e0e0);
+    }
+
+    &:after {
+      right: -13px;
+      background-image: linear-gradient(to right, #e0e0e0 , #eff3fb);
+    }
   }
 }
 
@@ -55,7 +83,8 @@
 
   .giveaway-prize { 
 
-    .giveaway-info-primary {  
+    .giveaway-info-primary { 
+
     }
 
     .giveaway-image-wrap {  
@@ -69,6 +98,23 @@
       border: none;
       border-left: 2px dashed #CDD0DC;
       padding-right: 55px;
+
+      &:before {
+        left: -13px;
+        background-image: linear-gradient(to top, #7d94f3 , #7d94f3);
+      }
+
+      &:after {
+      top: auto;
+      right: auto;
+      bottom: -13px;
+      left: -13px;
+      background-image: linear-gradient(to top, #e0e1e3, #dddddf );
+      }
+    }
+
+    .giveaway-metadata-wrap {
+      margin-top: 20px;
     }
   }
 }

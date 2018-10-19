@@ -29,6 +29,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/build/img/amazon-logo.png": {
+		"ft": 32768,
+		"iS": 9058,
+		"oA": 0,
+		"oAP": "/img/amazon-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/build/img/clock.png": {
 		"ft": 32768,
 		"iS": 810,
@@ -77,6 +88,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/bootstrap.bundle-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/build/js/scripts-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/scripts-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1257,6 +1278,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/build/scss/components/_tooltip.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/css/_tooltip.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/build/scss/components/_typography.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1290,6 +1324,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/build/scss/css/tooltip.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/build/scss/css/tooltip-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/build/scss/main.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1302,26 +1346,6 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
-		},
-	"/build/svg/clock.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/clock.svg",
-		"oF": 2,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/build/svg/gleam.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/gleam.svg",
-		"oF": 2,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"/css/main.css": {
 		"aP": 1,
@@ -1339,6 +1363,17 @@
 		"oA": 0,
 		"oAP": "/home-ol.html",
 		"oF": 0
+		},
+	"/img/amazon-logo.png": {
+		"ft": 32768,
+		"iS": 4548,
+		"oA": 0,
+		"oAP": "/img/amazon-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/clock.png": {
 		"ft": 32768,
@@ -1407,6 +1442,26 @@
 		"oAP": "/prize.html",
 		"oF": 0
 		},
+	"/svg/check-corner.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/check-corner.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/svg/check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/check.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/svg/clock.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1416,6 +1471,97 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/svg/dropdown.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/dropdown.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/svg/facebook-outline.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/facebook-outline.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/svg/gleam.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/gleam.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/svg/heart.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/heart.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/svg/pencil.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/pencil.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/svg/play.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/play.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/svg/ticket-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/ticket-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/svg/time-clock-circle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/svg/time-clock-circle.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/svg/twitter-outline.png": {
+		"ft": 32768,
+		"iS": 2010,
+		"oA": 0,
+		"oAP": "/img/twitter-outline.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		}
 	},
 "hooks": [
