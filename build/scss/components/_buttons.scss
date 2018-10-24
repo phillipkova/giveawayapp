@@ -58,3 +58,31 @@
     background-size: cover;
   }
 }
+
+.btn-outline-secondary {
+  background-color: white;
+  border-color: #CDD0DC;
+
+  &:hover {
+    color: #343C60;
+    background-color: white;
+    border-color: #CDD0DC;
+
+    .fa {
+      color: #ff7474;
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  .fa {
+    color: #CDD0DC;
+    transition: color .25s;
+  }
+}
+
+
+
+

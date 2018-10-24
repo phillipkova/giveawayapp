@@ -3,6 +3,7 @@ head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
   link(href='https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900', rel='stylesheet')
+  link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
   link(rel='stylesheet' href='/css/main.css')
   title GiveawayApp
 
@@ -23,7 +24,9 @@ nav.navbar.navbar-expand-lg.navbar-dark.navbar-transparent
       li.nav-item
         a.nav-link(href='#') Pricing
       li.nav-item
-        button.btn.btn-success(type='button') Join Now
+        button.btn.btn-success(type='button')
+          i.fa.fa-pencil.mr-2
+          | Join Now
 
 
 section.jumbotron
@@ -31,7 +34,9 @@ section.jumbotron
     .text-center.text-white
       p.lead The best way to find giveaways
       h1.h1 Enter Giveaways, Win Prizes
-      button.btn.btn-secondary How it Works
+      button.btn.btn-secondary
+        i.fa.fa-play-circle-o.mr-2
+        | How it Works
     .giveaway-search
       form.form-inline
         .col-md-3
@@ -61,13 +66,10 @@ section.giveaway-results-main.container
     .col-md-4
       .giveaway-tn-item
         .giveaway-tn-header
-          span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<b>Time Remaining</b>')
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+          span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
+            i.fa.fa-clock-o
             span 3 Days
-          span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<b>Entry Method:</b> Gleam')
+          span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<div class="display-4">Entry Method</div><div class="text-left text-white">Gleam</div>')
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
         .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
@@ -77,17 +79,14 @@ section.giveaway-results-main.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
 
     .col-md-4
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -99,17 +98,14 @@ section.giveaway-results-main.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
 
     .col-md-4
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -121,8 +117,8 @@ section.giveaway-results-main.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
 
 
 section.giveaway-tn-results.container
@@ -132,20 +128,25 @@ section.giveaway-tn-results.container
         button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
           | Newest
         .dropdown-menu(aria-labelledby='btnGroupDrop1')
-          a.dropdown-item(href='#') Ending Soonest 
-          a.dropdown-item(href='#') Most Popular
-          a.dropdown-item(href='#') Highest Price
-          a.dropdown-item(href='#') Lowest Price
+          a.dropdown-item(href='#')
+            i.fa.fa-clock-o.mr-2
+            | Ending Soonest 
+          a.dropdown-item(href='#')
+            i.fa.fa-fire.mr-2
+            | Most Popular
+          a.dropdown-item(href='#')
+            i.fa.fa-arrow-up.mr-2
+            | Highest Price
+          a.dropdown-item(href='#')
+            i.fa.fa-arrow-down.mr-2
+            | Lowest Price
 
   .row
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -157,37 +158,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item.entered
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-            span 10 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -199,16 +176,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -220,16 +194,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -241,16 +212,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -262,16 +230,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -283,16 +248,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -304,16 +266,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -325,16 +284,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -346,16 +302,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -367,16 +320,13 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
     .col-sm-6.col-md-4.col-lg-3
       .giveaway-tn-item
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
-            svg(width='20', height='19', viewBox='0 0 20 19', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M9.85323 17.8743C14.4234 17.8743 18.1282 14.1695 18.1282 9.59932C18.1282 5.02918 14.4234 1.32434 9.85323 1.32434C5.28308 1.32434 1.57825 5.02918 1.57825 9.59932C1.57825 14.1695 5.28308 17.8743 9.85323 17.8743Z', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.59933V6.64398', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
-              path(d='M9.85327 9.5993L13.5471 13.2939', stroke='#CDD0DC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+            i.fa.fa-clock-o
             span 3 Days
           span.giveaway-tn-entry-method
             img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
@@ -388,11 +338,35 @@ section.giveaway-tn-results.container
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
           button.btn.btn-outline-secondary.btn-block
-            span.icon.icon-heart * 
-            span Save
+            .fa.fa-heart.mr-2
+            | Save
+    .col-sm-6.col-md-4.col-lg-3
+      .giveaway-tn-item
+        .giveaway-tn-header
+          span.giveaway-tn-time-remaining
+            i.fa.fa-clock-o
+            span 3 Days
+          span.giveaway-tn-entry-method
+            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+        .giveaway-tn-product-image
+          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+        .giveaway-tn-titles
+          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-value $200 Value
+        .giveaway-tn-cta
+          a.btn.btn-primary.btn-block(href="prize.html") View Details
+          button.btn.btn-outline-secondary.btn-block
+            .fa.fa-heart.mr-2
+            | Save
+
+.text-center.mt-4
+  i.fa.fa-spinner.fa-spin.fa-3x.text-graylight
 
 
-footer.text-center.my-5
+footer.text-center.mt
+  .social-media-links.mb-4
+    a.fa.fa-facebook-square.fa-2x.mx-2(href="#")
+    a.fa.fa-twitter-square.fa-2x.mx-2(href="#")
   ul.list-inline
     li.list-inline-item
       a(href="#") Disclaimer
