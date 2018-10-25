@@ -2509,7 +2509,7 @@ input[type="button"].btn-block {
   border-radius: 0.25rem; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #7D93F3; }
+  background-color: #45E19F; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
@@ -6378,6 +6378,19 @@ footer {
   width: 100%;
   background: #fff; }
 
+.icon-form {
+  position: relative; }
+  .icon-form .fa {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%); }
+  .icon-form .form-control {
+    padding-left: 40px; }
+
+.custom-select {
+  background-image: none; }
+
 .giveaway-tn-item {
   margin-bottom: 2em;
   padding: 20px;
@@ -6495,17 +6508,6 @@ img {
   img.img-scale {
     width: 100%; }
 
-.giveaway-search {
-  position: relative;
-  top: 100px;
-  padding: 20px;
-  background: white;
-  box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.18);
-  border-radius: 70px; }
-
-.giveaway-results-main {
-  margin-top: 150px; }
-
 .navbar-transparent {
   background-color: transparent; }
 
@@ -6588,6 +6590,35 @@ img {
       left: -13px;
       background-image: linear-gradient(to top, #e0e1e3, #dddddf); }
   .giveaway-prize .giveaway-metadata-wrap {
+    margin-top: 20px; } }
+
+.giveaway-search {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  top: 100px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.18); }
+  .giveaway-search form .form-item {
+    margin-bottom: 15px; }
+    .giveaway-search form .form-item:last-child {
+      margin-bottom: 0; }
+  .giveaway-search form .custom-checkbox {
+    left: 15px; }
+  .giveaway-search form .custom-control-label:before, .giveaway-search form .custom-control-label:after {
+    top: 0; }
+
+.giveaway-results-main {
+  margin-top: 150px; }
+
+@media (min-width: 576px) {
+  .giveaway-search .form-inline label {
+    margin-bottom: 0.5rem;
+    justify-content: left; }
+  .giveaway-search .form-control, .giveaway-search .custom-select {
+    width: 100%; }
+  .giveaway-search .custom-checkbox {
     margin-top: 20px; } }
 
 .h2 {

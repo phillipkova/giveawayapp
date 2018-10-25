@@ -1,0 +1,18 @@
+.icon-form {
+  position: relative;
+
+  .fa {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+
+  .form-control {
+    padding-left: 40px;
+  }
+}
+
+.custom-select {
+  background-image: none;
+}

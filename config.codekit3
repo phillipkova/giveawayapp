@@ -1226,6 +1226,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/build/scss/components/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/css/_forms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/build/scss/components/_general.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1248,6 +1261,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/build/scss/css/_giveaway-prize-large.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/build/scss/components/_giveaway-search.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/css/_giveaway-search.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

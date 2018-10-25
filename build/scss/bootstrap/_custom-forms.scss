@@ -102,7 +102,7 @@
 
   .custom-control-input:checked ~ .custom-control-label {
     &::before {
-      @include gradient-bg($custom-control-indicator-checked-bg);
+      background-color: $green;
     }
     &::after {
       background-image: $custom-checkbox-indicator-icon-checked;
