@@ -2,28 +2,30 @@
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
-  top: 100px;
+  top: 70px;
   background: white;
   border-radius: 4px;
   box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.18);
 
-  form {
-    .form-item {
-      margin-bottom: 15px;
+  label {
+    color: $graylight;
+  }
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+  .form-item {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 
-    .custom-checkbox {
-      left: 15px;
-    }
+  .custom-checkbox {
+    left: 15px;
+  }
 
-    .custom-control-label {
-      &:before, &:after {
-        top: 0;
-      }
+  .custom-control-label {
+    &:before, &:after {
+      top: 0;
     }
   }
 }
@@ -35,6 +37,12 @@
 
 @media (min-width: 576px) {
   .giveaway-search {
+    padding: 30px 15px 15px;
+
+    .form-item {
+
+    }
+
     .form-inline {
       label {
         margin-bottom: 0.5rem;
@@ -47,7 +55,34 @@
     }
 
     .custom-checkbox {
-      margin-top: 20px;
+      margin-top: 16px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .giveaway-search {
+    top: 65px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 100px;
+
+    .form-item {
+    }
+
+    .form-inline {
+      label {
+      }
+    }
+
+    .form-control, .custom-select {
+
+    }
+
+    .form-control {
+    }
+
+    .custom-checkbox {
     }
   }
 }

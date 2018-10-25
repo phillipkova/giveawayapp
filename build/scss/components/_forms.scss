@@ -13,6 +13,12 @@
   }
 }
 
-.custom-select {
+.form-control, .custom-select {
   background-image: none;
+  border: 2px solid #ececec;
+
+  &:hover, &:active, &:focus {
+    box-shadow: none;
+    border-color: #d0d0d0;
+  }
 }
