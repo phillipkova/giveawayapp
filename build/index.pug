@@ -4,388 +4,388 @@ head
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
   link(href='https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900', rel='stylesheet')
   link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
-  link(rel='stylesheet' href='/css/main.css')
+  link(rel='stylesheet' href='css/main.css')
   title GiveawayApp
+  
+body
+  nav.navbar.navbar-expand-lg.navbar-dark.navbar-transparent
+    a.navbar-brand(href='index.html')
+      <img src="img/logo.png" width="125" class="d-inline-block align-top" alt="">
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Giveaways 
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Winners
+        li.nav-item
+          a.nav-link(href='#') Pricing
+        li.nav-item
+          button.btn.btn-success(type='button')
+            i.fa.fa-pencil.mr-2
+            | Join Now
 
 
-nav.navbar.navbar-expand-lg.navbar-dark.navbar-transparent
-  a.navbar-brand(href='index.html')
-    <img src="img/logo.png" width="125" class="d-inline-block align-top" alt="">
-  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-  #navbarSupportedContent.collapse.navbar-collapse
-    ul.navbar-nav.ml-auto
-      li.nav-item.active
-        a.nav-link(href='#')
-          | Giveaways 
-          span.sr-only (current)
-      li.nav-item
-        a.nav-link(href='#') Winners
-      li.nav-item
-        a.nav-link(href='#') Pricing
-      li.nav-item
-        button.btn.btn-success(type='button')
-          i.fa.fa-pencil.mr-2
-          | Join Now
+  section.jumbotron
+    .container
+      .text-center.text-white
+        p.lead The best way to find giveaways
+        h1.h1 Enter Giveaways, Win Prizes
+        button.btn.btn-icon-play.btn-sm
+          img.mr-2(src="svg/play.svg")
+          | How it Works
+      .giveaway-search
+        form.form-inline
+          .form-item.col-md-12.col-lg-6
+            label.display-4 Search
+            .icon-form
+              i.fa.fa-search.text-graylight
+              input#inlineFormInputName.form-control(type='text' placeholder='Search for prizes')
+          .form-item.col-6.col-sm-4.col-md-4.col-lg-2
+            label.display-4 Category
+            select#inlineFormCustomSelectPref.custom-select.my-1.mr-md-2
+              option(selected='') All
+              option(value='1') One
+              option(value='2') Two
+              option(value='3') Three
+          .form-item.col-6.col-sm-4.col-md-4.col-lg-2
+            label.display-4 Entry Method
+            select#inlineFormCustomSelectPref.custom-select.my-1.mr-md-2
+              option(selected='') All
+              option(value='1') One
+              option(value='2') Two
+              option(value='3') Three
+          .form-item.custom-control.custom-checkbox.col-sm-4.col-md-4.col-lg-2
+            input#customControlInline.custom-control-input(type='checkbox')
+            label.display-4.custom-control-label(for='customControlInline') Hide Entered
 
 
-section.jumbotron
-  .container
-    .text-center.text-white
-      p.lead The best way to find giveaways
-      h1.h1 Enter Giveaways, Win Prizes
-      button.btn.btn-icon-play.btn-sm
-        img.mr-2(src="svg/play.svg")
-        | How it Works
-    .giveaway-search
-      form.form-inline
-        .form-item.col-md-12.col-lg-6
-          label.display-4 Search
-          .icon-form
-            i.fa.fa-search.text-graylight
-            input#inlineFormInputName.form-control(type='text' placeholder='Search for prizes')
-        .form-item.col-6.col-sm-4.col-md-4.col-lg-2
-          label.display-4 Category
-          select#inlineFormCustomSelectPref.custom-select.my-1.mr-md-2
-            option(selected='') All
-            option(value='1') One
-            option(value='2') Two
-            option(value='3') Three
-        .form-item.col-6.col-sm-4.col-md-4.col-lg-2
-          label.display-4 Entry Method
-          select#inlineFormCustomSelectPref.custom-select.my-1.mr-md-2
-            option(selected='') All
-            option(value='1') One
-            option(value='2') Two
-            option(value='3') Three
-        .form-item.custom-control.custom-checkbox.col-sm-4.col-md-4.col-lg-2
-          input#customControlInline.custom-control-input(type='checkbox')
-          label.display-4.custom-control-label(for='customControlInline') Hide Entered
+  section.giveaway-results-main.container
+    .row.justify-content-between.mb-3
+      .col
+        h4.h4 Hottest Giveaways
+    .row
+      .col-md-4
+        .giveaway-tn-item.tn-lg
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<div class="display-4">Entry Method</div><div class="text-left text-white">Gleam</div>')
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+
+      .col-md-4
+        .giveaway-tn-item.tn-lg
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+
+      .col-md-4
+        .giveaway-tn-item.tn-lg
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
 
 
-section.giveaway-results-main.container
-  .row.justify-content-between.mb-3
-    .col
-      h4.h4 Hottest Giveaways
-  .row
-    .col-md-4
-      .giveaway-tn-item.tn-lg
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<div class="display-4">Entry Method</div><div class="text-left text-white">Gleam</div>')
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
+  section.giveaway-tn-results.container
+    .row.justify-content-between.mb-3
+      .col
+        .btn-group.mt-5.mb-4(role='group')
+          button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | Newest
+          .dropdown-menu(aria-labelledby='btnGroupDrop1')
+            a.dropdown-item(href='#')
+              i.fa.fa-clock-o.mr-2
+              | Ending Soonest 
+            a.dropdown-item(href='#')
+              i.fa.fa-fire.mr-2
+              | Most Popular
+            a.dropdown-item(href='#')
+              i.fa.fa-arrow-up.mr-2
+              | Highest Price
+            a.dropdown-item(href='#')
+              i.fa.fa-arrow-down.mr-2
+              | Lowest Price
 
-    .col-md-4
-      .giveaway-tn-item.tn-lg
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
+    .row
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Big long giveaway title
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item.entered
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item.entered
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item.entered
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
+      .col-sm-6.col-md-4.col-lg-3
+        .giveaway-tn-item
+          .giveaway-tn-header
+            span.giveaway-tn-time-remaining
+              i.fa.fa-clock-o
+              span 3 Days
+            span.giveaway-tn-entry-method
+              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
+          .giveaway-tn-product-image
+            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
+          .giveaway-tn-titles
+            .giveaway-tn-prize-name Amazon Echo
+            .giveaway-tn-value $200 Value
+          .giveaway-tn-cta
+            a.btn.btn-primary.btn-block(href="prize.html") View Details
+            button.btn.btn-outline-secondary.btn-block
+              .fa.fa-heart.mr-2
+              | Save
 
-    .col-md-4
-      .giveaway-tn-item.tn-lg
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-
-
-section.giveaway-tn-results.container
-  .row.justify-content-between.mb-3
-    .col
-      .btn-group.mt-5.mb-4(role='group')
-        button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-          | Newest
-        .dropdown-menu(aria-labelledby='btnGroupDrop1')
-          a.dropdown-item(href='#')
-            i.fa.fa-clock-o.mr-2
-            | Ending Soonest 
-          a.dropdown-item(href='#')
-            i.fa.fa-fire.mr-2
-            | Most Popular
-          a.dropdown-item(href='#')
-            i.fa.fa-arrow-up.mr-2
-            | Highest Price
-          a.dropdown-item(href='#')
-            i.fa.fa-arrow-down.mr-2
-            | Lowest Price
-
-  .row
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Big long giveaway title
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item.entered
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item.entered
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item.entered
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-    .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
-        .giveaway-tn-header
-          span.giveaway-tn-time-remaining
-            i.fa.fa-clock-o
-            span 3 Days
-          span.giveaway-tn-entry-method
-            img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-        .giveaway-tn-product-image
-          img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-        .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
-          .giveaway-tn-value $200 Value
-        .giveaway-tn-cta
-          a.btn.btn-primary.btn-block(href="prize.html") View Details
-          button.btn.btn-outline-secondary.btn-block
-            .fa.fa-heart.mr-2
-            | Save
-
-.text-center.mt-4
-  i.fa.fa-spinner.fa-spin.fa-3x.text-graylight
+  .text-center.mt-4
+    i.fa.fa-spinner.fa-spin.fa-3x.text-graylight
 
 
-footer.text-center.mt
-  .social-media-links.mb-4
-    a.fa.fa-facebook-square.fa-2x.mx-2(href="#")
-    a.fa.fa-twitter-square.fa-2x.mx-2(href="#")
-  ul.list-inline
-    li.list-inline-item
-      a(href="#") Disclaimer
-    li.list-inline-item
-      a(href="#") Privacy Policy
-    li.list-inline-item
-      a(href="#") Terms of Use
-    li.list-inline-item
-      a(href="#") Submit Giveaway
-    li.list-inline-item
-      a(href="#") Contact
-  p.text-center ©2018 GiveAway.App All rights reserved
+  footer.text-center.mt
+    .social-media-links.mb-4
+      a.fa.fa-facebook-square.fa-2x.mx-2(href="#")
+      a.fa.fa-twitter-square.fa-2x.mx-2(href="#")
+    ul.list-inline
+      li.list-inline-item
+        a(href="#") Disclaimer
+      li.list-inline-item
+        a(href="#") Privacy Policy
+      li.list-inline-item
+        a(href="#") Terms of Use
+      li.list-inline-item
+        a(href="#") Submit Giveaway
+      li.list-inline-item
+        a(href="#") Contact
+    p.text-center ©2018 GiveAway.App All rights reserved
 
 
-script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
-script(type='text/javascript' src='/js/bootstrap.bundle-min.js')
-script(type='text/javascript' src='/js/scripts-min.js')
+  script(type='text/javascript' src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+  script(type='text/javascript' src='js/bootstrap.bundle.js')
+  script(type='text/javascript' src='js/scripts-min.js')

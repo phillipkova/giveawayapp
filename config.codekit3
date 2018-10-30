@@ -82,23 +82,33 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/build/js/bootstrap.bundle.js": {
+	"/build/js/bootstrap.bundle-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/build/js/bootstrap.bundle-min.js",
+		"oAP": "/build/js/bootstrap.bundle-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/build/js/scripts-min.js": {
+	"/build/js/bootstrap.bundle.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
+		"oA": 2,
+		"oAP": "/js/bootstrap.bundle.js",
+		"oF": 3,
+		"sC": 3,
+		"tS": 0
+		},
+	"/build/js/jquery.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
 		"oA": 0,
-		"oAP": "/build/js/scripts-min-min.js",
-		"oF": 0,
+		"oAP": "/js/jquery.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -107,9 +117,9 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/build/js/scripts-min.js",
-		"oF": 0,
-		"sC": 3,
+		"oAP": "/js/scripts-min.js",
+		"oF": 2,
+		"sC": 0,
 		"tS": 0
 		},
 	"/build/prize.pug": {
@@ -1440,19 +1450,22 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/index.html",
-		"oF": 0
-		},
 	"/js/bootstrap.bundle-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/js/bootstrap.bundle-min-min.js",
+		"oF": 1,
+		"sC": 0,
+		"tS": 0
+		},
+	"/js/bootstrap.bundle.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/bootstrap.bundle-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

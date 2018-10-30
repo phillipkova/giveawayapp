@@ -6360,7 +6360,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   align-items: center;
   margin: 30px auto 0;
-  padding: 9px 25px 6px 10px;
+  padding: 7px 25px 7px 10px;
   border-radius: 50px;
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.4);
@@ -6369,6 +6369,9 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase; }
   .btn-icon-play:hover {
     border-color: rgba(255, 255, 255, 0.8); }
+  .btn-icon-play img {
+    position: relative;
+    top: 1px; }
 
 .btn-outline-secondary {
   background-color: white;
