@@ -1,5 +1,17 @@
 .giveaway-prize-wrapper {
-  margin-top: -90px;
+  margin-top: -180px;
+
+  .previous-page {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+      opacity: .8;
+    }
+  }
 
   .giveaway-save-button {
     position: absolute;
@@ -20,7 +32,7 @@
 
   .subheading {
     margin-top: 15px;
-    color: #CDD0DC;
+    color: #9c9fab;
     font-weight: 300;
     line-height: normal;
     font-size: 18px;
@@ -48,6 +60,11 @@
       &:last-child {
         border: none;
       }
+    }
+
+    .giveaway-time-remaining {
+      display: flex;
+      align-items: center;
     }
 
     .display-4 {

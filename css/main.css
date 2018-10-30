@@ -6558,8 +6558,19 @@ img {
     color: #D6DDFF;
     font-weight: 600; }
 
+.jumbotron-prize {
+  padding-bottom: 150px; }
+
 .giveaway-prize-wrapper {
-  margin-top: -90px; }
+  margin-top: -180px; }
+  .giveaway-prize-wrapper .previous-page {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff; }
+    .giveaway-prize-wrapper .previous-page:hover {
+      text-decoration: none;
+      opacity: .8; }
   .giveaway-prize-wrapper .giveaway-save-button {
     position: absolute;
     top: 25px;
@@ -6574,7 +6585,7 @@ img {
     text-align: center; }
   .giveaway-prize .subheading {
     margin-top: 15px;
-    color: #CDD0DC;
+    color: #9c9fab;
     font-weight: 300;
     line-height: normal;
     font-size: 18px;
@@ -6593,6 +6604,9 @@ img {
       border-bottom: 2px solid #F3F4F7; }
       .giveaway-prize .giveaway-info-secondary .metadata-item:last-child {
         border: none; }
+    .giveaway-prize .giveaway-info-secondary .giveaway-time-remaining {
+      display: flex;
+      align-items: center; }
     .giveaway-prize .giveaway-info-secondary .display-4 {
       margin-bottom: 10px; }
     .giveaway-prize .giveaway-info-secondary:before, .giveaway-prize .giveaway-info-secondary:after {
