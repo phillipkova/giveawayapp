@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5, h6,
   color: inherit; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 2.8rem; }
 
 h2, .h2 {
   font-size: 2rem; }
@@ -6356,6 +6356,20 @@ a.text-dark:hover, a.text-dark:focus {
     background-repeat: no-repeat;
     background-size: cover; }
 
+.btn-icon-play {
+  display: flex;
+  align-items: center;
+  margin: 30px auto 0;
+  padding: 9px 25px 6px 10px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase; }
+  .btn-icon-play:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+
 .btn-outline-secondary {
   background-color: white;
   border-color: #CDD0DC; }
@@ -6396,20 +6410,30 @@ footer {
     border-color: #d0d0d0; }
 
 .giveaway-tn-item {
+  position: relative;
   margin-bottom: 2em;
   padding: 20px;
   border: 3px solid #F3F4F7;
   border-radius: 4px;
   background-color: #fff;
   transition: all .25s; }
+  @media (min-width: 576px) {
+    .giveaway-tn-item.tn-lg .giveaway-tn-prize-name {
+      font-size: 21px; } }
+  @media (min-width: 768px) {
+    .giveaway-tn-item.tn-lg .giveaway-tn-prize-name {
+      font-size: 16px; } }
+  @media (min-width: 1200px) {
+    .giveaway-tn-item.tn-lg .giveaway-tn-prize-name {
+      font-size: 21px; } }
   .giveaway-tn-item.entered {
     border: 3px solid #45E19F !important; }
     .giveaway-tn-item.entered:before {
       content: "\f00c";
       font-family: fontawesome;
       position: absolute;
-      bottom: 35px;
-      right: 22px;
+      bottom: 1px;
+      right: 3px;
       z-index: 1;
       color: white;
       transform: rotate(-2deg);
@@ -6421,8 +6445,8 @@ footer {
       height: 0;
       border-bottom: 45px solid #45E19F;
       border-left: 45px solid transparent;
-      bottom: 35px;
-      right: 18px; }
+      bottom: 0px;
+      right: 0px; }
 
 .giveaway-tn-item:hover {
   border-color: transparent;
@@ -6430,13 +6454,7 @@ footer {
   .giveaway-tn-item:hover .giveaway-tn-product-image img {
     opacity: .3; }
   .giveaway-tn-item:hover .giveaway-tn-cta {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-90%);
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 0 20%;
+    transform: translateY(-70%);
     visibility: visible;
     opacity: 1; }
 
@@ -6481,7 +6499,13 @@ footer {
   font-size: 21px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal; }
+  line-height: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+  @media (min-width: 576px) {
+    .giveaway-tn-prize-name {
+      font-size: 16px; } }
 
 .giveaway-tn-value {
   color: #45E19F;
@@ -6495,11 +6519,11 @@ footer {
 .giveaway-tn-cta {
   position: absolute;
   top: 50%;
-  transform: translateY(-70%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   width: 100%;
-  padding: 0 20%;
+  padding: 0 15%;
   transition: all .5s;
   visibility: hidden;
   opacity: 0; }
@@ -6526,6 +6550,10 @@ img {
   background-size: cover;
   background-position: right;
   border-radius: 0; }
+  .jumbotron .lead {
+    margin-bottom: 0.5rem;
+    color: #D6DDFF;
+    font-weight: 600; }
 
 .giveaway-prize-wrapper {
   margin-top: -90px; }
@@ -6636,6 +6664,20 @@ img {
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 100px; } }
+
+.h1 {
+  font-size: 1.7rem;
+  font-weight: 900; }
+
+.lead {
+  font-weight: 600;
+  font-size: 1rem; }
+
+@media (min-width: 576px) {
+  .h1 {
+    font-size: 2.8rem; }
+  .lead {
+    font-size: 1.5rem; } }
 
 .h2 {
   color: #343C60;

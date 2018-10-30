@@ -34,8 +34,8 @@ section.jumbotron
     .text-center.text-white
       p.lead The best way to find giveaways
       h1.h1 Enter Giveaways, Win Prizes
-      button.btn.btn-secondary.mt-3
-        i.fa.fa-play-circle-o.mr-2
+      button.btn.btn-icon-play.btn-sm
+        img.mr-2(src="svg/play.svg")
         | How it Works
     .giveaway-search
       form.form-inline
@@ -69,7 +69,7 @@ section.giveaway-results-main.container
       h4.h4 Hottest Giveaways
   .row
     .col-md-4
-      .giveaway-tn-item
+      .giveaway-tn-item.tn-lg
         .giveaway-tn-header
           span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
             i.fa.fa-clock-o
@@ -88,7 +88,7 @@ section.giveaway-results-main.container
             | Save
 
     .col-md-4
-      .giveaway-tn-item
+      .giveaway-tn-item.tn-lg
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
             i.fa.fa-clock-o
@@ -107,7 +107,7 @@ section.giveaway-results-main.container
             | Save
 
     .col-md-4
-      .giveaway-tn-item
+      .giveaway-tn-item.tn-lg
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
             i.fa.fa-clock-o
@@ -158,7 +158,7 @@ section.giveaway-tn-results.container
         .giveaway-tn-product-image
           img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
         .giveaway-tn-titles
-          .giveaway-tn-prize-name Amazon Echo
+          .giveaway-tn-prize-name Big long giveaway title
           .giveaway-tn-value $200 Value
         .giveaway-tn-cta
           a.btn.btn-primary.btn-block(href="prize.html") View Details
@@ -256,7 +256,7 @@ section.giveaway-tn-results.container
             .fa.fa-heart.mr-2
             | Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
+      .giveaway-tn-item.entered
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
             i.fa.fa-clock-o
@@ -292,7 +292,7 @@ section.giveaway-tn-results.container
             .fa.fa-heart.mr-2
             | Save
     .col-sm-6.col-md-4.col-lg-3
-      .giveaway-tn-item
+      .giveaway-tn-item.entered
         .giveaway-tn-header
           span.giveaway-tn-time-remaining
             i.fa.fa-clock-o

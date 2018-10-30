@@ -1,10 +1,28 @@
 .giveaway-tn-item {
+  position: relative;
   margin-bottom: 2em;
   padding: 20px;
   border: 3px solid #F3F4F7;
   border-radius: 4px;
   background-color: #fff;
   transition: all .25s;
+
+  &.tn-lg {
+    .giveaway-tn-prize-name {
+
+      @include media-breakpoint-up(sm) {
+        font-size: 21px;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 16px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        font-size: 21px;
+      }
+    }
+  }
 
   &.entered {
     border: 3px solid #45E19F !important;
@@ -13,8 +31,8 @@
       content: "\f00c";
       font-family: fontawesome;
       position: absolute;
-      bottom: 35px;
-      right: 22px;
+      bottom: 1px;
+      right: 3px;
       z-index: 1;
       color: white;
       transform: rotate(-2deg);
@@ -28,8 +46,8 @@
       height: 0;
       border-bottom: 45px solid $green;
       border-left: 45px solid transparent;
-      bottom: 35px;
-      right: 18px;
+      bottom: 0px;
+      right: 0px;
     }
   }
 }
@@ -46,13 +64,7 @@
     }
 
     .giveaway-tn-cta {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-90%);
-      left: 0;
-      right: 0;
-      width: 100%;
-      padding: 0 20%;
+      transform: translateY(-70%);
       visibility: visible;
       opacity: 1;
     }
@@ -112,6 +124,13 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 16px;
+  }
 }
 
 .giveaway-tn-value {
@@ -127,11 +146,11 @@
 .giveaway-tn-cta {
   position: absolute;
   top: 50%;
-  transform: translateY(-70%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   width: 100%;
-  padding: 0 20%;
+  padding: 0 15%;
   transition: all .5s;
   visibility: hidden;
   opacity: 0;
