@@ -4,6 +4,7 @@ head
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
   link(href='https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900', rel='stylesheet')
   link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css', rel='stylesheet')
   link(rel='stylesheet' href='css/main.css')
   title GiveawayApp
 
@@ -82,12 +83,13 @@ section.giveaway-prize-wrapper
 
 section.giveaway-results-main.container
   .row.justify-content-between.mb-3
-    .col-7
+    .col-12.col-sm-7
       h4.h4 Giveaways for you
-    .col-5.text-right
-      button.btn.btn-secondary.btn-sm(type='button') See all giveaways
-  .row
-    .col-md-4
+    .col-5.text-right.d-none.d-sm-block
+      a.btn.btn-secondary.btn-round.btn-sm(href="#") See all giveaways
+  .swiper-container
+    .swiper-wrapper
+      .swiper-slide
         .giveaway-tn-item.tn-lg
           .giveaway-tn-header
             span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
@@ -105,7 +107,7 @@ section.giveaway-results-main.container
             button.btn.btn-outline-secondary.btn-block
               .fa.fa-heart.mr-2
               | Save
-    .col-md-4
+      .swiper-slide
         .giveaway-tn-item.tn-lg
           .giveaway-tn-header
             span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
@@ -123,7 +125,7 @@ section.giveaway-results-main.container
             button.btn.btn-outline-secondary.btn-block
               .fa.fa-heart.mr-2
               | Save
-    .col-md-4
+      .swiper-slide
         .giveaway-tn-item.tn-lg
           .giveaway-tn-header
             span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
@@ -141,6 +143,11 @@ section.giveaway-results-main.container
             button.btn.btn-outline-secondary.btn-block
               .fa.fa-heart.mr-2
               | Save
+    .swiper-button-next
+    .swiper-button-prev
+
+  .text-center.d-block.d-sm-none
+    a.btn.btn-secondary.btn-round.btn-sm(href="#") See all giveaways
 
 
 footer.text-center.my-5
@@ -160,4 +167,5 @@ footer.text-center.my-5
 
 script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
 script(type='text/javascript' src='js/bootstrap.bundle-min.js')
+script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js')
 script(type='text/javascript' src='js/scripts-min.js')

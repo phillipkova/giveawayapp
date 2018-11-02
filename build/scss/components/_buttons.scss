@@ -2,6 +2,18 @@
   @extend .text-white;
 }
 
+.btn-secondary {
+  padding: 4px 18px;
+  background-color: #EBEBF1;
+  border-color: #EBEBF1;
+  color: $dark;
+  font-weight: 600;
+}
+
+.btn-round {
+  border-radius: 50px;
+}
+
 .btn-outline-secondary-alt {
   color: #343C60;
   border: 3px solid #F3F4F7;
