@@ -6672,7 +6672,19 @@ img {
     top: 0; }
 
 .giveaway-results-main {
-  margin-top: 150px; }
+  margin-top: 150px;
+  position: relative; }
+  .giveaway-results-main .swiper-button-prev, .giveaway-results-main .swiper-button-next {
+    height: 37px;
+    width: 21px;
+    background-size: cover;
+    outline: none; }
+  .giveaway-results-main .swiper-button-prev {
+    left: 30px;
+    background-image: url("../img/slider-arrow-prev.png"); }
+  .giveaway-results-main .swiper-button-next {
+    right: 30px;
+    background-image: url("../img/slider-arrow-next.png"); }
 
 @media (min-width: 576px) {
   .giveaway-search {
@@ -6690,7 +6702,17 @@ img {
     top: 65px;
     padding-left: 50px;
     padding-right: 50px;
-    border-radius: 100px; } }
+    border-radius: 100px; }
+  .giveaway-results-main .swiper-button-prev {
+    left: -30px; }
+  .giveaway-results-main .swiper-button-next {
+    right: -30px; } }
+
+@media (min-width: 1200px) {
+  .giveaway-results-main .swiper-button-prev {
+    left: -60px; }
+  .giveaway-results-main .swiper-button-next {
+    right: -60px; } }
 
 .h1 {
   font-size: 1.7rem;

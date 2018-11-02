@@ -32,10 +32,35 @@
 
 .giveaway-results-main {
   margin-top: 150px;
+  position: relative;
+
+  .swiper-container {
+
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    height: 37px;
+    width: 21px;
+    background-size: cover;
+    outline: none;
+  }
+
+  .swiper-button-prev {
+    left: 30px;
+    background-image: url('../img/slider-arrow-prev.png');
+  }
+
+  .swiper-button-next {
+    right: 30px;
+    background-image: url('../img/slider-arrow-next.png');
+  }
 }
 
 
 @media (min-width: 576px) {
+  .giveaway-results-main {
+
+  }
   .giveaway-search {
     padding: 30px 15px 15px;
 
@@ -66,23 +91,26 @@
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 100px;
-
-    .form-item {
+  }
+  .giveaway-results-main {
+    .swiper-button-prev {
+      left: -30px;
     }
 
-    .form-inline {
-      label {
-      }
+    .swiper-button-next {
+      right: -30px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .giveaway-results-main {
+    .swiper-button-prev {
+      left: -60px;
     }
 
-    .form-control, .custom-select {
-
-    }
-
-    .form-control {
-    }
-
-    .custom-checkbox {
+    .swiper-button-next {
+      right: -60px;
     }
   }
 }
