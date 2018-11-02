@@ -4,4 +4,23 @@ footer {
   padding: 40px 0;
   width: 100%;
   background: $white;
+
+  .social-media-links {
+    a {
+      display: inline-block;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .icon-fb {
+      height: 27px;
+      width: 26px;
+    }
+    .icon-tw {
+      height: 27px;
+      width: 31px;
+    }
+  }
 }

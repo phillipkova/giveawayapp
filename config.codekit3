@@ -51,6 +51,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/build/img/facebook-outline.png": {
+		"ft": 32768,
+		"iS": 1253,
+		"oA": 0,
+		"oAP": "/img/facebook-outline.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/build/img/form-dropdown-arrow.png": {
+		"ft": 32768,
+		"iS": 333,
+		"oA": 0,
+		"oAP": "/img/form-dropdown-arrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/build/img/jumbotron-lg.jpg": {
 		"ft": 16384,
 		"iS": 135284,
@@ -90,6 +112,17 @@
 		"oA": 0,
 		"oAP": "/img/slider-arrow-prev.png",
 		"oF": 3,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/build/img/twitter-outline.png": {
+		"ft": 32768,
+		"iS": 2010,
+		"oA": 0,
+		"oAP": "/img/twitter-outline.png",
+		"oF": 2,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -1460,6 +1493,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/facebook-outline.png": {
+		"ft": 32768,
+		"iS": 2456,
+		"oA": 0,
+		"oAP": "/img/facebook-outline.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/form-dropdown-arrow.png": {
+		"ft": 32768,
+		"iS": 263,
+		"oA": 0,
+		"oAP": "/img/form-dropdown-arrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/jumbotron-lg.jpg": {
 		"ft": 16384,
 		"iS": 97811,
@@ -1498,6 +1553,17 @@
 		"iS": 378,
 		"oA": 0,
 		"oAP": "/img/slider-arrow-prev.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/twitter-outline.png": {
+		"ft": 32768,
+		"iS": 2684,
+		"oA": 0,
+		"oAP": "/img/twitter-outline.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1667,17 +1733,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"/svg/twitter-outline.png": {
-		"ft": 32768,
-		"iS": 2010,
-		"oA": 0,
-		"oAP": "/img/twitter-outline.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		}
 	},
 "hooks": [

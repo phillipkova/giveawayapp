@@ -129,10 +129,11 @@ body
   section.giveaway-tn-results.container
     .row.justify-content-between.mb-3
       .col
-        .btn-group.mt-5.mb-4(role='group')
-          button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .btn-group.mt-5.mb-1(role='group')
+          #sortGiveaways.h4.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
             | Newest
-          .dropdown-menu(aria-labelledby='btnGroupDrop1')
+          .dropdown-menu(aria-labelledby='sortGiveaways')
+            .subtitle.display-4 Sort By
             a.dropdown-item(href='#')
               i.fa.fa-clock-o.mr-2
               | Ending Soonest 
@@ -370,8 +371,11 @@ body
 
   footer.text-center.mt
     .social-media-links.mb-4
-      a.fa.fa-facebook-square.fa-2x.mx-2(href="#")
-      a.fa.fa-twitter-square.fa-2x.mx-2(href="#")
+      a.icon-fb.mx-2(href="#")
+        img(src="img/facebook-outline.png")
+      a.icon-tw.mx-2(href="#")
+        img(src="img/twitter-outline.png")
+      a.mx-2(href="#")
     ul.list-inline
       li.list-inline-item
         a(href="#") Disclaimer
