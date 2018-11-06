@@ -118,6 +118,19 @@
   }
 }
 
+.btn-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7F859C;
+  font-size: 1rem;
+  background-color: #EEF0F3;
+
+  .fa {
+    font-size: 2rem;
+  }
+}
+
 .dropdown-toggle {
   cursor: pointer;
 

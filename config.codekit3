@@ -9,25 +9,21 @@
 	],
 "creatorBuild": "28905",
 "files": {
-	"/build/css/bootstrap-grid.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"/account-entered.html": {
+		"cB": 0,
+		"ft": 8192,
 		"oA": 0,
-		"oAP": "/build/css/bootstrap-grid-min.css",
-		"oF": 0,
-		"oS": 3
+		"oAP": "/account-entered.html",
+		"oF": 0
 		},
-	"/build/css/bootstrap-reboot.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"/build/account-entered.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/css/bootstrap-reboot-min.css",
+		"oAP": "/account-entered.html",
 		"oF": 0,
-		"oS": 3
+		"oS": 0
 		},
 	"/build/img/amazon-logo.png": {
 		"ft": 32768,
@@ -90,6 +86,28 @@
 		"oA": 0,
 		"oAP": "/img/logo.png",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/build/img/profile-placeholder.png": {
+		"ft": 32768,
+		"iS": 3285,
+		"oA": 0,
+		"oAP": "/img/profile-placeholder.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/build/img/profile-ticket-icons.png": {
+		"ft": 32768,
+		"iS": 393,
+		"oA": 0,
+		"oAP": "/img/profile-ticket-icons.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -195,6 +213,15 @@
 		"oF": 2,
 		"sC": 0,
 		"tS": 0
+		},
+	"/build/login.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/login.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"/build/prize.pug": {
 		"cB": 0,
@@ -1284,6 +1311,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/build/scss/components/_account-pages.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/css/_account-pages.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/build/scss/components/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1470,15 +1510,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/build/signin.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "/signin.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"/css/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1549,6 +1580,28 @@
 		"iS": 2868,
 		"oA": 0,
 		"oAP": "/img/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/profile-placeholder.png": {
+		"ft": 32768,
+		"iS": 1572,
+		"oA": 0,
+		"oAP": "/img/profile-placeholder.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/profile-ticket-icons.png": {
+		"ft": 32768,
+		"iS": 265,
+		"oA": 0,
+		"oAP": "/img/profile-ticket-icons.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1642,18 +1695,18 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/login.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/login.html",
+		"oF": 0
+		},
 	"/prize.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/prize.html",
-		"oF": 0
-		},
-	"/signin.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/signin.html",
 		"oF": 0
 		},
 	"/svg/check-corner.svg": {

@@ -318,7 +318,7 @@ h4, .h4 {
   font-size: 1.5rem; }
 
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 1.2rem; }
 
 h6, .h6 {
   font-size: 1rem; }
@@ -6312,6 +6312,55 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.account-infocard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.058); }
+  .account-infocard .upper-well {
+    padding: 30px 15px;
+    text-align: center; }
+  .account-infocard .profile-pic img {
+    height: 120px;
+    width: 120px;
+    border-radius: 100px; }
+  .account-infocard .account-email {
+    margin: 0;
+    color: #7F859C; }
+  .account-infocard hr {
+    margin: 0;
+    border: 1px solid #F3F4F7; }
+  .account-infocard .lower-well {
+    padding: 30px 15px; }
+    .account-infocard .lower-well .btn {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+  .account-infocard .account-plan {
+    margin-bottom: 30px; }
+  .account-infocard .plan-type {
+    margin: 0 0 4px; }
+  .account-infocard .plan-metadata {
+    display: flex;
+    justify-content: space-between; }
+  .account-infocard .metadata-text {
+    margin: 0;
+    color: #7F859C; }
+  .account-infocard .metadata-icons {
+    height: 10px;
+    width: 40px;
+    background-image: url("../img/profile-ticket-icons.png");
+    background-size: cover; }
+  .account-infocard .tiny-title {
+    margin: 10px 0 0;
+    text-align: center;
+    color: #7F859C;
+    font-size: 14px; }
+
+@media (min-width: 1200px) {
+  .account-infocard .upper-well {
+    padding: 30px; }
+  .account-infocard .lower-well {
+    padding: 30px; } }
+
 .btn-secondary {
   padding: 4px 18px;
   background-color: #EBEBF1;
@@ -6397,6 +6446,16 @@ a.text-dark:hover, a.text-dark:focus {
   .btn-outline-secondary .fa {
     color: #CDD0DC;
     transition: color .25s; }
+
+.btn-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7F859C;
+  font-size: 1rem;
+  background-color: #EEF0F3; }
+  .btn-logout .fa {
+    font-size: 2rem; }
 
 .dropdown-toggle {
   cursor: pointer; }
@@ -6779,6 +6838,10 @@ img {
   font-weight: 700;
   font-size: 1.5rem; }
 
+.h5 {
+  color: #343C60;
+  font-weight: 700; }
+
 .lead {
   font-weight: 600;
   font-size: 1rem; }
@@ -6796,7 +6859,6 @@ img {
 
 .display-3 {
   color: #343C60;
-  font-family: Avenir;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -6804,7 +6866,6 @@ img {
 
 .display-4 {
   color: #7F859C;
-  font-family: Avenir;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
