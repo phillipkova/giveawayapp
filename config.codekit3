@@ -137,6 +137,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/build/join.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/join.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/build/js/bootstrap.bundle-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1461,6 +1470,15 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/build/signin.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/signin.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/css/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1577,6 +1595,13 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/join.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/join.html",
+		"oF": 0
+		},
 	"/js/bootstrap.bundle-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1622,6 +1647,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/prize.html",
+		"oF": 0
+		},
+	"/signin.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/signin.html",
 		"oF": 0
 		},
 	"/svg/check-corner.svg": {

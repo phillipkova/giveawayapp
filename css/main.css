@@ -6316,7 +6316,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 4px 18px;
   background-color: #EBEBF1;
   border-color: #EBEBF1;
-  color: #343a40;
+  color: #343C60;
   font-weight: 600; }
 
 .btn-round {
@@ -6434,7 +6434,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 footer {
   display: inline-block;
-  margin-top: 200px;
+  margin-top: 150px;
   padding: 40px 0;
   width: 100%;
   background: #fff; }
@@ -6448,6 +6448,17 @@ footer {
   footer .social-media-links .icon-tw {
     height: 27px;
     width: 31px; }
+  footer ul a {
+    color: #343C60;
+    font-size: 14px;
+    font-weight: 600; }
+    footer ul a:hover {
+      color: inherit; }
+  footer p {
+    margin: 0;
+    color: #343C60;
+    font-size: 14px;
+    font-weight: 600; }
 
 .icon-form {
   position: relative; }
