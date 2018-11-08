@@ -25,6 +25,24 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/build/account-saved.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/account-saved.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/build/account-settings.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/account-settings.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/build/img/amazon-logo.png": {
 		"ft": 32768,
 		"iS": 9058,

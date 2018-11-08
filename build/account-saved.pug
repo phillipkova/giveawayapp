@@ -30,30 +30,53 @@ body
 
 
   section.jumbotron.jumbotron-sm
-    .container.text-center
-      h1.h1.text-center.text-white Welcome back!
-      p.lead Login in to continue
-      
-  section.container.mt-5
-    .row
-      .col-lg-3
-      .col-lg-6
-        .card.p-4
-          form
-            .form-row
-              .form-group.col-md-12
-                label.display-4(for='emailAddress') Email
-                input#emailAddress.form-control(type='email')
-              .form-group.col-md-12
-                label.display-4(for='password') Password
-                input#password.form-control(type='password')
-            a.btn.btn-success.btn-block.btn-lg.mt-4(href='account-entered.html') Login
-        .text-center.mt-3
-          span Don't have an account? 
-          a(href="join.html") Join Now
-      .col-lg-3
+    .container
+      .jumbo-shift.offset-lg-4
+        h1.h1.text-white Manage
 
 
+  section
+    .container
+      .row
+        .account-tabs-wrapper.col-lg-8.order-lg-2
+          ul.account-tabs.nav.nav-pills.mb-3
+            li.nav-item
+              a.nav-link(href="account-entered.html")
+                i.fa.fa-ticket.mr-2
+                | Entered
+            li.nav-item
+              a.nav-link.active(href="account-saved.html")
+                i.fa.fa-heart.mr-2
+                | Saved
+            li.nav-item
+              a.nav-link(href="account-settings.html")
+                i.fa.fa-cog.mr-2
+                | Settings
+
+          .tab-content
+            span Saved
+
+        .infocard-wrapper.col-lg-4.order-lg-1
+          .account-infocard
+            .upper-well
+              .profile-pic
+                img(src="img/profile-placeholder.png")
+              h5.h5.account-name Phillip Kovalev
+              p.account-email phillipkova@gmail.com
+            hr
+            .lower-well
+              .account-plan
+                h5.h5.plan-type Free Plan
+                .plan-metadata
+                  .metadata-text 3 tickets per day
+                  .metadata-icons
+              a.btn.btn-block.btn-success(href="#") Get unlimited tickets 
+                b $5/mo
+                i.fa.fa-arrow-right.ml-2
+              p.tiny-title Upgrade to enter unlimited giveaways!
+          a.btn.btn-block.btn-lg.btn-logout.mt-5(href="login.html")
+            i.fa.fa-sign-out.fa-flip-horizontal.mr-3
+            | Logout of my account
 
 
   footer.text-center.mt

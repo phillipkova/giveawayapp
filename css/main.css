@@ -6355,6 +6355,28 @@ a.text-dark:hover, a.text-dark:focus {
     color: #7F859C;
     font-size: 14px; }
 
+.account-tabs .nav-link {
+  background-color: #EEF0F3;
+  padding: 0.8rem 1rem;
+  color: #7F859C; }
+  .account-tabs .nav-link.active {
+    color: #343C60;
+    font-weight: 700;
+    background-color: white; }
+    .account-tabs .nav-link.active .fa {
+      color: #45E19F; }
+
+@media (min-width: 576px) {
+  .account-tabs .nav-link {
+    padding: 1rem 2rem;
+    font-size: 1.2rem; } }
+
+@media (min-width: 992px) {
+  .infocard-wrapper {
+    top: -100px; }
+  .account-tabs-wrapper, .jumbo-shift {
+    padding-left: 50px; } }
+
 @media (min-width: 1200px) {
   .account-infocard .upper-well {
     padding: 30px; }
@@ -6685,6 +6707,10 @@ img {
 
 .jumbotron-prize {
   padding-bottom: 150px; }
+
+.jumbotron-sm {
+  margin-bottom: 40px;
+  padding-bottom: 50px; }
 
 .giveaway-prize-wrapper {
   margin-top: -180px; }

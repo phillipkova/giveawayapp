@@ -68,47 +68,65 @@
   }
 }
 
+.account-tabs {
+  .nav-link {
+    background-color: #EEF0F3;
+    padding: 0.8rem 1rem;
+    color: #7F859C;
+
+    &.active {
+      color: #343C60;
+      font-weight: 700;
+      background-color: white;
+
+      .fa {
+        color: $green;
+      }
+    }
+  }
+}
+
+.account-tab-tab-content {
+
+}
+
+@include media-breakpoint-up(sm) {
+  .account-tabs {
+    .nav-link {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+
+      &.active {
+
+        .fa {
+
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .infocard-wrapper {
+    top: -100px;
+  }
+  .account-tabs-wrapper, .jumbo-shift{
+    padding-left: 50px;
+  }
+}
+
 @include media-breakpoint-up(xl) {
   .account-infocard {
-
     .upper-well {
       padding: 30px;
     }
 
-    .profile-pic {
-      img {
-      }
-    }
-
-    .account-email {
-    }
-
-    hr {
-    }
-
     .lower-well {
       padding: 30px;
-
-      .btn {
-      }
-    }
-
-    .account-plan {
-    }
-
-    .plan-type {
-    }
-
-    .plan-metadata {
-    }
-
-    .metadata-text {
-    }
-
-    .metadata-icons {
-    }
-
-    .tiny-title {
     }
   }
 }
+
+
+
+

@@ -29,18 +29,34 @@ body
             | Join Now
 
 
-  section.jumbotron
+  section.jumbotron.jumbotron-sm
     .container
-      .offset-lg-4
+      .jumbo-shift.offset-lg-4
         h1.h1.text-white Manage
 
 
   section
     .container
       .row
-        .col-lg-8.order-lg-2
-          .card account content
-        .col-lg-4.order-lg-1
+        .account-tabs-wrapper.col-lg-8.order-lg-2
+          ul.account-tabs.nav.nav-pills.mb-3
+            li.nav-item
+              a.nav-link.active(href="account-entered.html")
+                i.fa.fa-ticket.mr-2
+                | Entered
+            li.nav-item
+              a.nav-link(href="account-saved.html")
+                i.fa.fa-heart.mr-2
+                | Saved
+            li.nav-item
+              a.nav-link(href="account-settings.html")
+                i.fa.fa-cog.mr-2
+                | Settings
+
+          .tab-content
+            span Entered
+
+        .infocard-wrapper.col-lg-4.order-lg-1
           .account-infocard
             .upper-well
               .profile-pic
