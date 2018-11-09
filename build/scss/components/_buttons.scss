@@ -43,6 +43,17 @@
   }
 }
 
+.btn-outline {
+  display: inline-block;
+  padding: 9px 16px 1px;
+  border: 1px solid #CDD0DC;
+  border-radius: 50px;
+
+  &:hover {
+    border-color: #9a9da7;
+  }
+}
+
 .btn-icon  {
   position: relative;
 
@@ -65,6 +76,14 @@
     width: 72px;
     top: 9px;
     left: 8px;
+    background-image: url(../img/amazon-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .icon-amazon-sm {
+    height: 17px;
+    width: 56px;
     background-image: url(../img/amazon-logo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,6 +172,11 @@
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.106);
   border-radius: 4px;
   border: none;
+
+  &.menu-right {
+    left: auto !important;
+    right: -5px;
+  }
 
   .subtitle {
     padding: 0.25rem 1.5rem 0.4rem;

@@ -53,8 +53,81 @@ body
                 i.fa.fa-cog.mr-2
                 | Settings
 
-          .tab-content
-            span Settings
+          .account-tab-content
+            h4.h4.mt-5.mb-4 User information:
+            form
+              .form-row
+                .form-group.col-md-6
+                  label.display-4(for='firstName') First Name
+                  input#firstName.form-control(type='name')
+                .form-group.col-md-6
+                  label.display-4(for='lastName') Last Name
+                  input#lastName.form-control(type='name')
+                .form-group.col-md-12
+                  label.display-4(for='emailAddress') Email
+                  input#emailAddress.form-control(type='email')
+                .form-group.col-md-6
+                  label.display-4(for='password') Password
+                  input#password.form-control(type='password')
+                .form-group.col-md-6
+                  label.display-4(for='passwordConfirm') Confirm Password
+                  input#passwordConfirm.form-control(type='password')
+              a.btn.btn-primary.mt-4(href='account-entered.html') Update Settings
+              hr.my-5
+
+              h4.h4.mt-5.mb-4 Plans:
+              .row
+                .col-xl-6
+                  .plan-card.mb-4
+                    .plan-pricing
+                      .h2 Free
+                      .display-3.text-success $0.00
+                    .plan-graphic.mt-4.mb-5
+                      img.free-plan(src="img/plans-3tickets.png")
+                    ul.plan-list
+                      li - 3 tickets a day
+                      li - Save giveaways
+                      li - Advanced search filters
+                      li - Track entered giveaways
+                      li - See expired giveaways
+                    .plan-cta
+                      button.btn.btn-secondary(disabled) Current Plan
+
+                .col-xl-6
+                  .plan-card
+                    .plan-pricing
+                      .h2 Pro
+                      .display-3.text-success $5.00
+                    .plan-graphic.mt-4.mb-5
+                      img.paid-plan(src="img/plans-ticket-roll.png")
+                    ul.plan-list
+                      li
+                        b - Unlimited tickets a day
+                      li - Save giveaways
+                      li - Advanced search filters
+                      li - Track entered giveaways
+                      li - See expired giveaways
+                    .plan-cta
+                      button.btn.btn-success.btn-block.btn-lg
+                        | Start your 14 day free trial
+                        i.fa.fa-arrow-right.ml-2
+                  .text-center
+                    a.btn.btn-link.text-muted(href="#") Cancel my monthly plan
+              hr.my-5
+
+              .payment-info
+                h4.h4.mt-5.mb-4 Payment information:
+
+                .display-4 Card details
+                p.text-muted We never store or receive your credit card details - they are securely stored on Stripe
+
+                .card.p-4
+                  i.fa.fa-credit-card
+                  div Credit Card / Debit Card: 
+                    span.card-number ************1337
+                button.btn.btn-primary.mt-4(type="button") Update payment information
+
+
 
         .infocard-wrapper.col-lg-4.order-lg-1
           .account-infocard

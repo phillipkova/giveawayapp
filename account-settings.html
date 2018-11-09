@@ -35,7 +35,86 @@
             <li class="nav-item"><a class="nav-link" href="account-saved.html"><i class="fa fa-heart mr-2"></i>Saved</a></li>
             <li class="nav-item"><a class="nav-link active" href="account-settings.html"><i class="fa fa-cog mr-2"></i>Settings</a></li>
           </ul>
-          <div class="tab-content"><span>Settings</span></div>
+          <div class="account-tab-content">
+            <h4 class="h4 mt-5 mb-4">User information:</h4>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="display-4" for="firstName">First Name</label>
+                  <input class="form-control" id="firstName" type="name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="display-4" for="lastName">Last Name</label>
+                  <input class="form-control" id="lastName" type="name">
+                </div>
+                <div class="form-group col-md-12">
+                  <label class="display-4" for="emailAddress">Email</label>
+                  <input class="form-control" id="emailAddress" type="email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="display-4" for="password">Password</label>
+                  <input class="form-control" id="password" type="password">
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="display-4" for="passwordConfirm">Confirm Password</label>
+                  <input class="form-control" id="passwordConfirm" type="password">
+                </div>
+              </div><a class="btn btn-primary mt-4" href="account-entered.html">Update Settings</a>
+              <hr class="my-5">
+              <h4 class="h4 mt-5 mb-4">Plans:</h4>
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="plan-card mb-4">
+                    <div class="plan-pricing">
+                      <div class="h2">Free</div>
+                      <div class="display-3 text-success">$0.00</div>
+                    </div>
+                    <div class="plan-graphic mt-4 mb-5"><img class="free-plan" src="img/plans-3tickets.png"></div>
+                    <ul class="plan-list">
+                      <li>- 3 tickets a day</li>
+                      <li>- Save giveaways</li>
+                      <li>- Advanced search filters</li>
+                      <li>- Track entered giveaways</li>
+                      <li>- See expired giveaways</li>
+                    </ul>
+                    <div class="plan-cta">
+                      <button class="btn btn-secondary" disabled>Current Plan</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="plan-card">
+                    <div class="plan-pricing">
+                      <div class="h2">Pro</div>
+                      <div class="display-3 text-success">$5.00</div>
+                    </div>
+                    <div class="plan-graphic mt-4 mb-5"><img class="paid-plan" src="img/plans-ticket-roll.png"></div>
+                    <ul class="plan-list">
+                      <li><b>- Unlimited tickets a day</b></li>
+                      <li>- Save giveaways</li>
+                      <li>- Advanced search filters</li>
+                      <li>- Track entered giveaways</li>
+                      <li>- See expired giveaways</li>
+                    </ul>
+                    <div class="plan-cta">
+                      <button class="btn btn-success btn-block btn-lg">Start your 14 day free trial<i class="fa fa-arrow-right ml-2"></i></button>
+                    </div>
+                  </div>
+                  <div class="text-center"><a class="btn btn-link text-muted" href="#">Cancel my monthly plan</a></div>
+                </div>
+              </div>
+              <hr class="my-5">
+              <div class="payment-info">
+                <h4 class="h4 mt-5 mb-4">Payment information:</h4>
+                <div class="display-4">Card details</div>
+                <p class="text-muted">We never store or receive your credit card details - they are securely stored on Stripe</p>
+                <div class="card p-4"><i class="fa fa-credit-card"></i>
+                  <div>Credit Card / Debit Card: <span class="card-number">************1337</span></div>
+                </div>
+                <button class="btn btn-primary mt-4" type="button">Update payment information</button>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="infocard-wrapper col-lg-4 order-lg-1">
           <div class="account-infocard">

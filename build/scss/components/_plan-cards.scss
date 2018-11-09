@@ -1,0 +1,48 @@
+.plan-card {
+  padding: 30px 15px;
+  background-color: white;
+  border: 3px solid #F3F4F7;
+  border-radius: 4px;
+
+  .plan-pricing {
+    text-align: center;
+  }
+
+  .plan-graphic {
+    margin-bottom: 30px;
+    text-align: center;
+
+    img {
+
+    }
+
+    .free-plan {
+      height: 92px;
+      width: 157px;
+    }
+
+    .paid-plan {
+      height: 92;
+      width: 98px;
+    }
+  }
+
+  .plan-list {
+    width: 200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 25px;
+      color: #7F859C;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .plan-cta {
+    margin-top: 60px;
+    text-align: center;
+  }
+}
