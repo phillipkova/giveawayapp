@@ -112,6 +112,9 @@
                   <div>Credit Card / Debit Card: <span class="card-number">************1337</span></div>
                 </div>
                 <button class="btn btn-primary mt-4" type="button">Update payment information</button>
+                <form action="/charge" method="POST">
+                  <script class="stripe-button" src="https://checkout.stripe.com/checkout.js" data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh" data-image="/square-image.png" data-name="Demo Site" data-description="2 widgets ($20.00)" data-amount="2000"></script>
+                </form>
               </div>
               <hr class="my-5">
               <div class="payment-info">

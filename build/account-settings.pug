@@ -126,6 +126,9 @@ body
                   div Credit Card / Debit Card: 
                     span.card-number ************1337
                 button.btn.btn-primary.mt-4(type="button") Update payment information
+                form(action='/charge', method='POST')
+                  script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_6pRNASCoBOKtIshFeQd4XMUh', data-image='/square-image.png', data-name='Demo Site', data-description='2 widgets ($20.00)', data-amount='2000')
+
 
 
               hr.my-5
