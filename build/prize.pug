@@ -1,179 +1,129 @@
-doctype html
-head
-  meta(charset='utf-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-  link(href='https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900', rel='stylesheet')
-  link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
-  link(href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css', rel='stylesheet')
-  link(rel='stylesheet' href='css/main.css')
-  title GiveawayApp
+include includes/_head.pug
+  
+body
+  include includes/_header.pug
+  block swiperCSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css', rel='stylesheet')
 
 
-  nav.navbar.navbar-expand-lg.navbar-dark.navbar-transparent
-    a.navbar-brand(href='index.html')
-      <img src="img/logo.png" width="125" class="d-inline-block align-top" alt="">
-    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    #navbarSupportedContent.collapse.navbar-collapse
-      ul.navbar-nav.ml-auto
-        li.nav-item.active
-          a.nav-link(href='#')
-            | Giveaways 
-            span.sr-only (current)
-        li.nav-item
-          a.nav-link(href='#') Winners
-        li.nav-item
-          a.nav-link(href='#') Pricing
-        li.nav-item
-          a.btn.btn-success(href="join.html")
-            i.fa.fa-pencil.mr-2
-            | Join Now
+  section.jumbotron.jumbotron-prize
+
+    
+  section.giveaway-prize-wrapper
+    .container
+      .row
+        .col-xl
+        .col-xl-11
+          a.previous-page(href='index.html')
+            i.fa.fa-arrow-left.mr-2
+            | All Giveaways
+          .giveaway-prize
+            .row
+              .giveaway-info-primary.col-lg-8
+                .giveaway-save-button.d-lg-none
+                  button.btn.btn-save(data-toggle='tooltip', data-html='true', title='<div class="display-4">Save Giveaway</div>')
+                h2.h2 Amazon Echo
+                p.subheading Smart Bluetooth Speaker & Assistant
+                .giveaway-image-wrap
+                  img.img-scale(src='https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$')
+              .giveaway-info-secondary.col-lg-4
+                .giveaway-save-button.d-none.d-lg-block
+                  button.btn.btn-save(data-toggle='tooltip', data-html='true', title='<div class="display-4">Save Giveaway</div>')
+                .giveaway-metadata-wrap
+                  .metadata-item
+                    .display-4 Giveaway Ends In
+                    span.giveaway-time-remaining.d-flex
+                      img.mr-2(src='svg/clock.svg')
+                      span.display-3 3 Days
+                  .metadata-item
+                    .row
+                      .prize-value-wrapper.col-6
+                        .display-4 Prize Value
+                        .prize-value.display-3 $80
+                      .col-6
+                        .display-4 You Pay
+                        .prize-value.display-3.text-success
+                          b $0
+                  .metadata-item
+                    .display-4 Entry Method
+                    span.giveaway-time-remaining.d-flex
+                      img.mr-3(src='svg/gleam.svg')
+                      span.display-3 Gleam
+                .giveaway-cta-wrap
+                  a.btn.btn-success.btn-icon.btn-block.btn-lg.mb-4(href='#')
+                    span.icon.icon-ticket
+                    | Enter Giveaway
+                  a.btn.btn-outline-secondary-alt.btn-icon.btn-block.btn-lg(href='#')
+                    | Get it on
+                    span.icon.icon-amazon
+        .col-xl
+  section.giveaway-results-main.container
+    .row.justify-content-between.mb-3
+      .col-12.col-sm-7
+        h4.h4 Giveaways for you
+      .col-5.text-right.d-none.d-sm-block
+        a.btn.btn-secondary.btn-round.btn-sm(href='#') See all giveaways
+    .swiper-container
+      .swiper-wrapper
+        .swiper-slide
+          .giveaway-tn-item.tn-lg
+            .giveaway-tn-header
+              span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
+                i.fa.fa-clock-o
+                span 3 Days
+              span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<div class="display-4">Entry Method</div><div class="text-left text-white">Gleam</div>')
+                img(src='http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png')
+            .giveaway-tn-product-image
+              img(src='https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$')
+            .giveaway-tn-titles
+              .giveaway-tn-prize-name Amazon Echo
+              .giveaway-tn-value $200 Value
+            .giveaway-tn-cta
+              a.btn.btn-primary.btn-block(href='prize.html') View Details
+              button.btn.btn-outline-secondary.btn-block
+                .fa.fa-heart.mr-2
+                | Save
+        .swiper-slide
+          .giveaway-tn-item.tn-lg
+            .giveaway-tn-header
+              span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
+                i.fa.fa-clock-o
+                span 3 Days
+              span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<div class="display-4">Entry Method</div><div class="text-left text-white">Gleam</div>')
+                img(src='http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png')
+            .giveaway-tn-product-image
+              img(src='https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$')
+            .giveaway-tn-titles
+              .giveaway-tn-prize-name Amazon Echo
+              .giveaway-tn-value $200 Value
+            .giveaway-tn-cta
+              a.btn.btn-primary.btn-block(href='prize.html') View Details
+              button.btn.btn-outline-secondary.btn-block
+                .fa.fa-heart.mr-2
+                | Save
+        .swiper-slide
+          .giveaway-tn-item.tn-lg
+            .giveaway-tn-header
+              span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
+                i.fa.fa-clock-o
+                span 3 Days
+              span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<div class="display-4">Entry Method</div><div class="text-left text-white">Gleam</div>')
+                img(src='http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png')
+            .giveaway-tn-product-image
+              img(src='https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$')
+            .giveaway-tn-titles
+              .giveaway-tn-prize-name Amazon Echo
+              .giveaway-tn-value $200 Value
+            .giveaway-tn-cta
+              a.btn.btn-primary.btn-block(href='prize.html') View Details
+              button.btn.btn-outline-secondary.btn-block
+                .fa.fa-heart.mr-2
+                | Save
+    .swiper-button-prev.d-none.d-lg-block
+    .swiper-button-next.d-none.d-lg-block
+    .text-center.d-block.d-sm-none
+      a.btn.btn-secondary.btn-round.btn-sm(href='#') See all giveaways
 
 
-section.jumbotron.jumbotron-prize
-
-
-section.giveaway-prize-wrapper
-  .container
-    .row
-      .col-xl
-      .col-xl-11
-        a.previous-page(href="index.html")
-          i.fa.fa-arrow-left.mr-2
-          | All Giveaways
-        .giveaway-prize
-          .row
-            .giveaway-info-primary.col-lg-8
-              .giveaway-save-button.d-lg-none
-                button.btn.btn-save(data-toggle='tooltip', data-html='true', title='<div class="display-4">Save Giveaway</div>')
-              h2.h2 Amazon Echo
-              p.subheading Smart Bluetooth Speaker & Assistant
-              .giveaway-image-wrap
-                img.img-scale(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-            .giveaway-info-secondary.col-lg-4
-              .giveaway-save-button.d-none.d-lg-block
-                button.btn.btn-save(data-toggle='tooltip', data-html='true', title='<div class="display-4">Save Giveaway</div>')
-              .giveaway-metadata-wrap
-                .metadata-item
-                  .display-4 Giveaway Ends In
-                  span.giveaway-time-remaining.d-flex
-                    img.mr-2(src="svg/clock.svg")
-                    span.display-3 3 Days
-                .metadata-item
-                  .row
-                    div.prize-value-wrapper.col-6
-                      .display-4 Prize Value
-                      .prize-value.display-3 $80
-                    div.col-6
-                      .display-4 You Pay
-                      .prize-value.display-3.text-success
-                        b $0
-                .metadata-item
-                  .display-4 Entry Method
-                  span.giveaway-time-remaining.d-flex
-                    img.mr-3(src="svg/gleam.svg")
-                    span.display-3 Gleam
-              .giveaway-cta-wrap
-                a.btn.btn-success.btn-icon.btn-block.btn-lg.mb-4(href="#") 
-                  span.icon.icon-ticket
-                  | Enter Giveaway
-                a.btn.btn-outline-secondary-alt.btn-icon.btn-block.btn-lg(href="#")
-                  | Get it on
-                  span.icon.icon-amazon
-      .col-xl
-
-
-section.giveaway-results-main.container
-  .row.justify-content-between.mb-3
-    .col-12.col-sm-7
-      h4.h4 Giveaways for you
-    .col-5.text-right.d-none.d-sm-block
-      a.btn.btn-secondary.btn-round.btn-sm(href="#") See all giveaways
-  .swiper-container
-    .swiper-wrapper
-      .swiper-slide
-        .giveaway-tn-item.tn-lg
-          .giveaway-tn-header
-            span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
-              i.fa.fa-clock-o
-              span 3 Days
-            span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<div class="display-4">Entry Method</div><div class="text-left text-white">Gleam</div>')
-              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-          .giveaway-tn-product-image
-            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-          .giveaway-tn-titles
-            .giveaway-tn-prize-name Amazon Echo
-            .giveaway-tn-value $200 Value
-          .giveaway-tn-cta
-            a.btn.btn-primary.btn-block(href="prize.html") View Details
-            button.btn.btn-outline-secondary.btn-block
-              .fa.fa-heart.mr-2
-              | Save
-      .swiper-slide
-        .giveaway-tn-item.tn-lg
-          .giveaway-tn-header
-            span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
-              i.fa.fa-clock-o
-              span 3 Days
-            span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<div class="display-4">Entry Method</div><div class="text-left text-white">Gleam</div>')
-              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-          .giveaway-tn-product-image
-            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-          .giveaway-tn-titles
-            .giveaway-tn-prize-name Amazon Echo
-            .giveaway-tn-value $200 Value
-          .giveaway-tn-cta
-            a.btn.btn-primary.btn-block(href="prize.html") View Details
-            button.btn.btn-outline-secondary.btn-block
-              .fa.fa-heart.mr-2
-              | Save
-      .swiper-slide
-        .giveaway-tn-item.tn-lg
-          .giveaway-tn-header
-            span.giveaway-tn-time-remaining(data-toggle='tooltip', data-html='true', title='<div class="display-4">Time Remaining</div>')
-              i.fa.fa-clock-o
-              span 3 Days
-            span.giveaway-tn-entry-method(data-toggle='tooltip', data-html='true', title='<div class="display-4">Entry Method</div><div class="text-left text-white">Gleam</div>')
-              img(src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_gleam@2x.png")
-          .giveaway-tn-product-image
-            img(src="https://webobjects2.cdw.com/is/image/CDW/4583400?$product-main$")
-          .giveaway-tn-titles
-            .giveaway-tn-prize-name Amazon Echo
-            .giveaway-tn-value $200 Value
-          .giveaway-tn-cta
-            a.btn.btn-primary.btn-block(href="prize.html") View Details
-            button.btn.btn-outline-secondary.btn-block
-              .fa.fa-heart.mr-2
-              | Save
-  .swiper-button-prev.d-none.d-lg-block
-  .swiper-button-next.d-none.d-lg-block
-
-  .text-center.d-block.d-sm-none
-    a.btn.btn-secondary.btn-round.btn-sm(href="#") See all giveaways
-
-
-footer.text-center.mt
-  .social-media-links.mb-4
-    a.icon-fb.mx-2(href="#")
-      img(src="img/facebook-outline.png")
-    a.icon-tw.mx-2(href="#")
-      img(src="img/twitter-outline.png")
-    a.mx-2(href="#")
-  ul.list-inline
-    li.list-inline-item
-      a(href="#") Disclaimer
-    li.list-inline-item
-      a(href="#") Privacy Policy
-    li.list-inline-item
-      a(href="#") Terms of Use
-    li.list-inline-item
-      a(href="#") Submit Giveaway
-    li.list-inline-item
-      a(href="#") Contact
-  p.text-center ©2018 GiveAway.App All rights reserved
-
-
-script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
-script(type='text/javascript' src='js/bootstrap.bundle-min.js')
-script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js')
-script(type='text/javascript' src='js/scripts-min.js')
+  include includes/_footer.pug
+  include includes/_footer-scripts.pug

@@ -6648,7 +6648,7 @@ footer {
   border-color: transparent;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.106); }
   .giveaway-tn-item:hover .giveaway-tn-product-image img {
-    opacity: .3; }
+    opacity: .1; }
   .giveaway-tn-item:hover .giveaway-tn-cta {
     transform: translateY(-70%);
     visibility: visible;
@@ -6682,7 +6682,6 @@ footer {
   margin: 5% 10%;
   text-align: center; }
   .giveaway-tn-product-image img {
-    transition: all .25s;
     width: 100%; }
 
 .giveaway-tn-titles {
@@ -6720,9 +6719,7 @@ footer {
   right: 0;
   width: 100%;
   padding: 0 15%;
-  transition: all .5s;
-  visibility: hidden;
-  opacity: 0; }
+  visibility: hidden; }
 
 body {
   background-color: #F6F7F9; }

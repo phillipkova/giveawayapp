@@ -288,6 +288,42 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/build/includes/_footer-scripts.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/_footer-scripts.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/build/includes/_footer.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/_footer.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/build/includes/_head.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/_head.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/build/includes/_header.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/_header.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/build/index.pug": {
 		"cB": 0,
 		"cOD": 1,

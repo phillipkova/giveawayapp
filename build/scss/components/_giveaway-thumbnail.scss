@@ -59,7 +59,7 @@
 
     .giveaway-tn-product-image {
       img {
-        opacity: .3;
+        opacity: .1;
       }
     }
 
@@ -107,7 +107,6 @@
   text-align: center;
 
   img {
-    transition: all .25s;
     width: 100%;
   }
 }
@@ -151,9 +150,7 @@
   right: 0;
   width: 100%;
   padding: 0 15%;
-  transition: all .5s;
   visibility: hidden;
-  opacity: 0;
 }
 
 

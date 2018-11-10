@@ -1,39 +1,12 @@
-doctype html
-head
-  meta(charset='utf-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-  link(href='https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900', rel='stylesheet')
-  link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
-  link(rel='stylesheet' href='css/main.css')
-  title GiveawayApp
+include includes/_head.pug
   
 body
-  nav.navbar.navbar-expand-lg.navbar-dark.navbar-transparent
-    a.navbar-brand(href='index.html')
-      <img src="img/logo.png" width="125" class="d-inline-block align-top" alt="">
-    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    #navbarSupportedContent.collapse.navbar-collapse
-      ul.navbar-nav.ml-auto
-        li.nav-item.active
-          a.nav-link(href='#')
-            | Giveaways 
-            span.sr-only (current)
-        li.nav-item
-          a.nav-link(href='#') Winners
-        li.nav-item
-          a.nav-link(href='#') Pricing
-        li.nav-item
-          a.btn.btn-success(href="join.html")
-            i.fa.fa-pencil.mr-2
-            | Join Now
-
+  include includes/_header.pug
 
   section.jumbotron.jumbotron-sm
     .container
       .jumbo-shift.offset-lg-4
         h1.h1.text-white Manage
-
 
   section
     .container
@@ -126,9 +99,6 @@ body
                   div Credit Card / Debit Card: 
                     span.card-number ************1337
                 button.btn.btn-primary.mt-4(type="button") Update payment information
-                form(action='/charge', method='POST')
-                  script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_6pRNASCoBOKtIshFeQd4XMUh', data-image='/square-image.png', data-name='Demo Site', data-description='2 widgets ($20.00)', data-amount='2000')
-
 
 
               hr.my-5
@@ -179,28 +149,5 @@ body
             i.fa.fa-sign-out.fa-flip-horizontal.mr-3
             | Logout of my account
 
-
-  footer.text-center.mt
-    .social-media-links.mb-4
-      a.icon-fb.mx-2(href="#")
-        img(src="img/facebook-outline.png")
-      a.icon-tw.mx-2(href="#")
-        img(src="img/twitter-outline.png")
-      a.mx-2(href="#")
-    ul.list-inline
-      li.list-inline-item
-        a(href="#") Disclaimer
-      li.list-inline-item
-        a(href="#") Privacy Policy
-      li.list-inline-item
-        a(href="#") Terms of Use
-      li.list-inline-item
-        a(href="#") Submit Giveaway
-      li.list-inline-item
-        a(href="#") Contact
-    p.text-center ©2018 GiveAway.App All rights reserved
-
-
-  script(type='text/javascript' src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
-  script(type='text/javascript' src='js/bootstrap.bundle.js')
-  script(type='text/javascript' src='js/scripts-min.js')
+  include includes/_footer.pug
+  include includes/_footer-scripts.pug
