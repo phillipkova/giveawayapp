@@ -6757,6 +6757,20 @@ img {
     color: #7F859C;
     text-transform: uppercase; }
 
+.w-center-60 {
+  margin: 0 auto;
+  width: 100%; }
+
+@media (min-width: 992px) {
+  .w-center-60 {
+    width: 65%; } }
+
+.winners-list {
+  margin-top: 75px; }
+
+.winners-list-item {
+  margin-bottom: 30px; }
+
 .navbar-transparent {
   background-color: transparent; }
 

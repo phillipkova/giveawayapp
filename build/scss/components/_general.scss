@@ -28,3 +28,21 @@ img {
     text-transform: uppercase;
   }
 }
+
+.w-center-60 {
+  margin: 0 auto;
+  width: 100%;
+}
+@include media-breakpoint-up(lg) {
+  .w-center-60 {
+    width: 65%;
+  }
+}
+
+.winners-list {
+  margin-top: 75px;
+}
+
+.winners-list-item {
+  margin-bottom: 30px;
+}
