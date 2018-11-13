@@ -75,6 +75,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/build/forgot-password.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/forgot-password.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/build/img/amazon-logo.png": {
 		"ft": 32768,
 		"iS": 9058,
