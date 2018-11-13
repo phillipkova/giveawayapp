@@ -2,17 +2,25 @@ include includes/_head.pug
   
 body
   include includes/_header.pug
-
-  section.jumbotron.jumbotron-sm
-    .container.text-center
-      h1.h1.text-center.text-white Welcome back!
-      p.lead Login to continue
       
-  section.container.mt-5
+  section.join-section.container.mt-5
+    .join-heading
+      h1.h1.text-center Welcome back!
+      p.lead.text-center Login to continue
     .row
       .col-lg-3
       .col-lg-6
         .card.p-4
+          .row.mt-3
+            .col-xl-6.mb-3
+              button.btn.btn-block.btn-google
+                .fa.fa-google.mr-2
+                | Login with google
+            .col-xl-6
+              button.btn.btn-block.btn-facebook
+                .fa.fa-facebook.mr-2
+                | Login with facebook
+          hr.border-text.my-5
           form
             .form-row
               .form-group.col-md-12

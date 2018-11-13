@@ -57,6 +57,24 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/build/contact.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/contact.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/build/disclaimer.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/disclaimer.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/build/img/amazon-logo.png": {
 		"ft": 32768,
 		"iS": 9058,
@@ -398,6 +416,24 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "/login.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/build/pricing.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/pricing.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/build/privacy.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/privacy.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1714,6 +1750,40 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/build/submit-giveaway.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/submit-giveaway.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/build/terms.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/terms.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/build/winners.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/winners.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/contact.html",
+		"oF": 0
+		},
 	"/css/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1723,6 +1793,13 @@
 		"oAP": "/css/main-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/disclaimer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/disclaimer.html",
+		"oF": 0
 		},
 	"/img/amazon-logo.png": {
 		"ft": 32768,
@@ -2016,11 +2093,32 @@
 		"oAP": "/login.html",
 		"oF": 0
 		},
+	"/pricing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/pricing.html",
+		"oF": 0
+		},
+	"/privacy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/privacy.html",
+		"oF": 0
+		},
 	"/prize.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/prize.html",
+		"oF": 0
+		},
+	"/submit-giveaway.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/submit-giveaway.html",
 		"oF": 0
 		},
 	"/svg/check-corner.svg": {
@@ -2132,6 +2230,20 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/terms.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/terms.html",
+		"oF": 0
+		},
+	"/winners.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/winners.html",
+		"oF": 0
 		}
 	},
 "hooks": [

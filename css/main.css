@@ -6530,6 +6530,18 @@ a.text-dark:hover, a.text-dark:focus {
       color: #CDD0DC;
       font-size: 16px; }
 
+.btn-facebook {
+  color: white;
+  background-color: #3b5998; }
+  .btn-facebook:hover {
+    opacity: .9; }
+
+.btn-google {
+  color: white;
+  background-color: #dd4b39; }
+  .btn-google:hover {
+    opacity: .9; }
+
 footer {
   display: inline-block;
   margin-top: 150px;
@@ -6729,6 +6741,22 @@ img {
   img.img-scale {
     width: 100%; }
 
+.border-text {
+  position: relative; }
+  .border-text:after {
+    content: 'or';
+    background-color: white;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 60px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: #7F859C;
+    text-transform: uppercase; }
+
 .navbar-transparent {
   background-color: transparent; }
 
@@ -6755,6 +6783,11 @@ img {
 .jumbotron-sm {
   margin-bottom: 40px;
   padding-bottom: 50px; }
+
+.join-section {
+  padding-top: 150px; }
+  .join-section .join-heading {
+    margin-bottom: 30px; }
 
 .giveaway-prize-wrapper {
   margin-top: -180px; }
