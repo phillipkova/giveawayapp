@@ -6784,6 +6784,9 @@ img {
 .winners-list-item {
   margin-bottom: 30px; }
 
+.ad-banner {
+  margin: 6rem auto; }
+
 .navbar-transparent {
   background-color: transparent; }
 
@@ -6919,6 +6922,8 @@ img {
 .giveaway-results-main {
   margin-top: 150px;
   position: relative; }
+  .giveaway-results-main.results-spacing-sm {
+    margin-top: 100px; }
   .giveaway-results-main .swiper-button-prev, .giveaway-results-main .swiper-button-next {
     height: 37px;
     width: 21px;
