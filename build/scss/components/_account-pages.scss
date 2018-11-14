@@ -1,4 +1,10 @@
+.account-content-wrapper {
+  top: -80px;
+  position: relative;
+}
+
 .account-infocard {
+  margin-bottom: 50px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.058);
@@ -9,9 +15,12 @@
   }
 
   .profile-pic {
+    margin-bottom: 25px;
+
     img {
       height: 120px;
       width: 120px;
+      border: 20px solid #eef0f3;
       border-radius: 100px;
     }
   }
@@ -107,6 +116,10 @@ z
 }
 
 @include media-breakpoint-up(lg) {
+  .account-content-wrapper {
+    top: 0;
+    position: relative;
+  }
   .infocard-wrapper {
     top: -100px;
   }

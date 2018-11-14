@@ -1677,6 +1677,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/build/scss/components/_minimal-pages.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/css/_minimal-pages.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/build/scss/components/_plan-cards.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1808,6 +1821,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/disclaimer.html",
+		"oF": 0
+		},
+	"/forgot-password.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/forgot-password.html",
 		"oF": 0
 		},
 	"/img/amazon-logo.png": {

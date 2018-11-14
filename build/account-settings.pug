@@ -6,21 +6,28 @@ body
   section.jumbotron.jumbotron-sm
     .container
       .jumbo-shift.offset-lg-4
-        h1.h1.text-white Manage
+        h1.h1.text-white Account
 
-  section
+  section.account-content-wrapper
     .container
       .row
-        .account-tabs-wrapper.col-lg-8.order-lg-2
+        .infocard-wrapper.col-lg-4
+          .account-infocard
+            .upper-well
+              .profile-pic
+                img(src="img/profile-placeholder.png")
+              h5.h5.account-name Phillip Kovalev
+              p.account-email phillipkova@gmail.com
+          a.btn.btn-block.btn-lg.btn-logout.mt-5.d-none.d-lg-block(href="login.html")
+            i.fa.fa-sign-out.fa-flip-horizontal.mr-3
+            | Logout of my account
+
+        .account-tabs-wrapper.col-lg-8
           ul.account-tabs.nav.nav-pills.mb-3
             li.nav-item
               a.nav-link(href="account-entered.html")
                 i.fa.fa-ticket.mr-2
-                | Entered
-            li.nav-item
-              a.nav-link(href="account-saved.html")
-                i.fa.fa-heart.mr-2
-                | Saved
+                | Giveaways You've Entered
             li.nav-item
               a.nav-link.active(href="account-settings.html")
                 i.fa.fa-cog.mr-2
@@ -46,108 +53,8 @@ body
                   label.display-4(for='passwordConfirm') Confirm Password
                   input#passwordConfirm.form-control(type='password')
               a.btn.btn-primary.mt-4(href='account-entered.html') Update Settings
-              hr.my-5
-
-              h4.h4.mt-5.mb-4 Plans:
-              .row
-                .col-xl-6
-                  .plan-card.mb-4
-                    .plan-pricing
-                      .h2 Free
-                      .display-3.text-success $0.00
-                    .plan-graphic.mt-4.mb-5
-                      img.free-plan(src="img/plans-3tickets.png")
-                    ul.plan-list
-                      li - 3 tickets a day
-                      li - Save giveaways
-                      li - Advanced search filters
-                      li - Track entered giveaways
-                      li - See expired giveaways
-                    .plan-cta
-                      button.btn.btn-secondary(disabled) Current Plan
-
-                .col-xl-6
-                  .plan-card
-                    .plan-pricing
-                      .h2 Pro
-                      .display-3.text-success $5.00
-                    .plan-graphic.mt-4.mb-5
-                      img.paid-plan(src="img/plans-ticket-roll.png")
-                    ul.plan-list
-                      li
-                        b - Unlimited tickets a day
-                      li - Save giveaways
-                      li - Advanced search filters
-                      li - Track entered giveaways
-                      li - See expired giveaways
-                    .plan-cta
-                      button.btn.btn-success.btn-block.btn-lg
-                        | Start your 14 day free trial
-                        i.fa.fa-arrow-right.ml-2
-                  .text-center
-                    a.btn.btn-link.text-muted(href="#") Cancel my monthly plan
-              hr.my-5
-
-              .payment-info
-                h4.h4.mt-5.mb-4 Payment information:
-
-                .display-4 Card details
-                p.text-muted We never store or receive your credit card details - they are securely stored on Stripe
-
-                .card.p-4
-                  i.fa.fa-credit-card
-                  div Credit Card / Debit Card: 
-                    span.card-number ************1337
-                button.btn.btn-primary.mt-4(type="button") Update payment information
-
-
-              hr.my-5
-              .payment-info
-                h4.h4.mt-5.mb-4 Payment History:
-                
-                table.table
-                  thead
-                    tr
-                      th(scope='col') Description
-                      th(scope='col') Date
-                      th(scope='col') Amount
-                  tbody
-                    tr
-                      th(scope='row') GiveawayApp - Pro
-                      td 11/8/2018
-                      td $5.00
-                    tr
-                      th(scope='row') GiveawayApp - Pro
-                      td 11/8/2018
-                      td $5.00
-                    tr
-                      th(scope='row') GiveawayApp - Pro
-                      td 11/8/2018
-                      td $5.00
-
-
-
-        .infocard-wrapper.col-lg-4.order-lg-1
-          .account-infocard
-            .upper-well
-              .profile-pic
-                img(src="img/profile-placeholder.png")
-              h5.h5.account-name Phillip Kovalev
-              p.account-email phillipkova@gmail.com
-            hr
-            .lower-well
-              .account-plan
-                h5.h5.plan-type Free Plan
-                .plan-metadata
-                  .metadata-text 3 tickets per day
-                  .metadata-icons
-              a.btn.btn-block.btn-success(href="#") Get unlimited tickets 
-                b $5/mo
-                i.fa.fa-arrow-right.ml-2
-              p.tiny-title Upgrade to enter unlimited giveaways!
-          a.btn.btn-block.btn-lg.btn-logout.mt-5(href="login.html")
+          a.btn.btn-block.btn-lg.btn-logout.mt-5.d-lg-none(href="login.html")
             i.fa.fa-sign-out.fa-flip-horizontal.mr-3
             | Logout of my account
 
-  include includes/_footer.pug
   include includes/_footer-scripts.pug

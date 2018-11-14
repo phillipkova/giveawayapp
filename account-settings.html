@@ -14,7 +14,6 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active"><a class="nav-link" href="#">Giveaways <span class="sr-only">(current)</span></a></li>
         <li class="nav-item"><a class="nav-link" href="winners.html">Winners</a></li>
-        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
         <li class="nav-item"><a class="btn btn-success" href="join.html"><i class="fa fa-pencil mr-2"></i>Join Now</a></li>
       </ul>
     </div>
@@ -22,17 +21,25 @@
   <section class="jumbotron jumbotron-sm">
     <div class="container">
       <div class="jumbo-shift offset-lg-4">
-        <h1 class="h1 text-white">Manage</h1>
+        <h1 class="h1 text-white">Account</h1>
       </div>
     </div>
   </section>
-  <section>
+  <section class="account-content-wrapper">
     <div class="container">
       <div class="row">
-        <div class="account-tabs-wrapper col-lg-8 order-lg-2">
+        <div class="infocard-wrapper col-lg-4">
+          <div class="account-infocard">
+            <div class="upper-well">
+              <div class="profile-pic"><img src="img/profile-placeholder.png"></div>
+              <h5 class="h5 account-name">Phillip Kovalev</h5>
+              <p class="account-email">phillipkova@gmail.com</p>
+            </div>
+          </div><a class="btn btn-block btn-lg btn-logout mt-5 d-none d-lg-block" href="login.html"><i class="fa fa-sign-out fa-flip-horizontal mr-3"></i>Logout of my account</a>
+        </div>
+        <div class="account-tabs-wrapper col-lg-8">
           <ul class="account-tabs nav nav-pills mb-3">
-            <li class="nav-item"><a class="nav-link" href="account-entered.html"><i class="fa fa-ticket mr-2"></i>Entered</a></li>
-            <li class="nav-item"><a class="nav-link" href="account-saved.html"><i class="fa fa-heart mr-2"></i>Saved</a></li>
+            <li class="nav-item"><a class="nav-link" href="account-entered.html"><i class="fa fa-ticket mr-2"></i>Giveaways You've Entered</a></li>
             <li class="nav-item"><a class="nav-link active" href="account-settings.html"><i class="fa fa-cog mr-2"></i>Settings</a></li>
           </ul>
           <div class="account-tab-content">
@@ -60,126 +67,12 @@
                   <input class="form-control" id="passwordConfirm" type="password">
                 </div>
               </div><a class="btn btn-primary mt-4" href="account-entered.html">Update Settings</a>
-              <hr class="my-5">
-              <h4 class="h4 mt-5 mb-4">Plans:</h4>
-              <div class="row">
-                <div class="col-xl-6">
-                  <div class="plan-card mb-4">
-                    <div class="plan-pricing">
-                      <div class="h2">Free</div>
-                      <div class="display-3 text-success">$0.00</div>
-                    </div>
-                    <div class="plan-graphic mt-4 mb-5"><img class="free-plan" src="img/plans-3tickets.png"></div>
-                    <ul class="plan-list">
-                      <li>- 3 tickets a day</li>
-                      <li>- Save giveaways</li>
-                      <li>- Advanced search filters</li>
-                      <li>- Track entered giveaways</li>
-                      <li>- See expired giveaways</li>
-                    </ul>
-                    <div class="plan-cta">
-                      <button class="btn btn-secondary" disabled>Current Plan</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="plan-card">
-                    <div class="plan-pricing">
-                      <div class="h2">Pro</div>
-                      <div class="display-3 text-success">$5.00</div>
-                    </div>
-                    <div class="plan-graphic mt-4 mb-5"><img class="paid-plan" src="img/plans-ticket-roll.png"></div>
-                    <ul class="plan-list">
-                      <li><b>- Unlimited tickets a day</b></li>
-                      <li>- Save giveaways</li>
-                      <li>- Advanced search filters</li>
-                      <li>- Track entered giveaways</li>
-                      <li>- See expired giveaways</li>
-                    </ul>
-                    <div class="plan-cta">
-                      <button class="btn btn-success btn-block btn-lg">Start your 14 day free trial<i class="fa fa-arrow-right ml-2"></i></button>
-                    </div>
-                  </div>
-                  <div class="text-center"><a class="btn btn-link text-muted" href="#">Cancel my monthly plan</a></div>
-                </div>
-              </div>
-              <hr class="my-5">
-              <div class="payment-info">
-                <h4 class="h4 mt-5 mb-4">Payment information:</h4>
-                <div class="display-4">Card details</div>
-                <p class="text-muted">We never store or receive your credit card details - they are securely stored on Stripe</p>
-                <div class="card p-4"><i class="fa fa-credit-card"></i>
-                  <div>Credit Card / Debit Card: <span class="card-number">************1337</span></div>
-                </div>
-                <button class="btn btn-primary mt-4" type="button">Update payment information</button>
-              </div>
-              <hr class="my-5">
-              <div class="payment-info">
-                <h4 class="h4 mt-5 mb-4">Payment History:</h4>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Description</th>
-                      <th scope="col">Date</th>
-                      <th scope="col">Amount</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">GiveawayApp - Pro</th>
-                      <td>11/8/2018</td>
-                      <td>$5.00</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">GiveawayApp - Pro</th>
-                      <td>11/8/2018</td>
-                      <td>$5.00</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">GiveawayApp - Pro</th>
-                      <td>11/8/2018</td>
-                      <td>$5.00</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
             </form>
-          </div>
-        </div>
-        <div class="infocard-wrapper col-lg-4 order-lg-1">
-          <div class="account-infocard">
-            <div class="upper-well">
-              <div class="profile-pic"><img src="img/profile-placeholder.png"></div>
-              <h5 class="h5 account-name">Phillip Kovalev</h5>
-              <p class="account-email">phillipkova@gmail.com</p>
-            </div>
-            <hr>
-            <div class="lower-well">
-              <div class="account-plan">
-                <h5 class="h5 plan-type">Free Plan</h5>
-                <div class="plan-metadata">
-                  <div class="metadata-text">3 tickets per day</div>
-                  <div class="metadata-icons"></div>
-                </div>
-              </div><a class="btn btn-block btn-success" href="#">Get unlimited tickets <b>$5/mo</b><i class="fa fa-arrow-right ml-2"></i></a>
-              <p class="tiny-title">Upgrade to enter unlimited giveaways!</p>
-            </div>
-          </div><a class="btn btn-block btn-lg btn-logout mt-5" href="login.html"><i class="fa fa-sign-out fa-flip-horizontal mr-3"></i>Logout of my account</a>
+          </div><a class="btn btn-block btn-lg btn-logout mt-5 d-lg-none" href="login.html"><i class="fa fa-sign-out fa-flip-horizontal mr-3"></i>Logout of my account</a>
         </div>
       </div>
     </div>
   </section>
-  <footer class="text-center mt">
-    <div class="social-media-links mb-4"><a class="icon-fb mx-2" href="#"><img src="img/facebook-outline.png"></a><a class="icon-tw mx-2" href="#"><img src="img/twitter-outline.png"></a></div>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="disclaimer.html">Disclaimer</a></li>
-      <li class="list-inline-item"><a href="privacy.html">Privacy Policy</a></li>
-      <li class="list-inline-item"><a href="terms.html">Terms of Use</a></li>
-      <li class="list-inline-item"><a href="submit-giveaway.html">Submit Giveaway</a></li>
-      <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-    </ul>
-    <p class="text-center">©2018 GiveAway.App All rights reserved</p>
-  </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/bootstrap.bundle-min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>

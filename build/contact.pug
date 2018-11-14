@@ -5,8 +5,27 @@ body
 
   section.jumbotron.jumbotron-sm
     .container.text-center
-      h1.h1.text-center.text-white Contact
-      p.lead This is the contact page
+      h1.h1.text-center.text-white Contact Us
+      p.lead We're here to help
+
+  section.container
+    .row
+      .col-lg-2
+      .col-lg-8
+        .card.p-4
+          form
+            .form-row
+              .form-group.col-12
+                label.display-4(for='firstName') Name
+                input#firstName.form-control(type='name')
+              .form-group.col-md-12
+                label.display-4(for='emailAddress') Email
+                input#emailAddress.form-control(type='email')
+              .form-group.col-md-12
+                label.display-4 Message
+                textarea.form-control(placeholder="How can we assist you?" rows="5")
+            a.btn.btn-success.btn-block.btn-lg.mt-4(href='account-entered.html') Send message
+      .col-lg-2
 
   include includes/_footer.pug
   include includes/_footer-scripts.pug
