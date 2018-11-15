@@ -13,28 +13,28 @@ body
           | How it Works
       .giveaway-search
         form.form-inline
-          .form-item.col-md-12.col-lg-6
+          .form-item.search-form.col-md-12.col-lg-6
             label.display-4 Search
             .icon-form
               i.fa.fa-search.text-graylight
               input#inlineFormInputName.form-control(type='text' placeholder='Search for prizes')
-          .form-item.col-6.col-sm-4.col-md-4.col-lg-2
+          .form-item.form-selector.col-6.col-lg-3
             label.display-4 Category
             select#inlineFormCustomSelectPref.custom-select.my-1.mr-md-2
-              option(selected='') All
+              option(selected='') Category
               option(value='1') One
               option(value='2') Two
               option(value='3') Three
-          .form-item.col-6.col-sm-4.col-md-4.col-lg-2
+          .form-item.form-selector.col-6.col-lg-3
             label.display-4 Entry Method
             select#inlineFormCustomSelectPref.custom-select.my-1.mr-md-2
-              option(selected='') All
+              option(selected='') Entry Method
               option(value='1') One
               option(value='2') Two
               option(value='3') Three
-          .form-item.custom-control.custom-checkbox.col-sm-4.col-md-4.col-lg-2
+          .form-item.custom-control.custom-checkbox.col-12
             input#customControlInline.custom-control-input(type='checkbox')
-            label.display-4.custom-control-label(for='customControlInline') Hide Entered
+            label.custom-control-label.text-muted(for='customControlInline') Hide Entered
 
   section.giveaway-results-main.container
     .row.justify-content-between.mb-3

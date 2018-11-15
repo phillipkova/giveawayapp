@@ -9,7 +9,7 @@
   }
 
   .form-control {
-    padding-left: 40px;
+    padding-left: 60px;
   }
 }
 
@@ -21,4 +21,22 @@
     box-shadow: none;
     border-color: #d0d0d0;
   }
+}
+
+.form-selector {
+  &:after {
+    
+  }
+}
+
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 0;
+  background-image: url(../img/form-dropdown-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: right center;
 }

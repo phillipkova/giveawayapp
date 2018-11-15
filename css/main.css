@@ -6591,7 +6591,7 @@ footer {
     left: 15px;
     transform: translateY(-50%); }
   .icon-form .form-control {
-    padding-left: 40px; }
+    padding-left: 60px; }
 
 .form-control, .custom-select {
   background-image: none;
@@ -6599,6 +6599,17 @@ footer {
   .form-control:hover, .form-control:active, .form-control:focus, .custom-select:hover, .custom-select:active, .custom-select:focus {
     box-shadow: none;
     border-color: #d0d0d0; }
+
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 0;
+  background-image: url(../img/form-dropdown-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: right center; }
 
 .plan-card {
   padding: 30px 15px;
@@ -6795,6 +6806,7 @@ img {
   width: 100%; }
 
 .jumbotron {
+  margin-bottom: 150px;
   padding-top: 150px;
   padding-bottom: 0px;
   background-color: #7D93F3;
@@ -6901,68 +6913,71 @@ img {
     margin-top: 20px; } }
 
 .giveaway-search {
-  padding-top: 15px;
-  padding-bottom: 15px;
   position: relative;
-  top: 70px;
-  background: white;
-  border-radius: 4px;
-  box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.18); }
-  .giveaway-search label {
-    color: #b7bac7; }
+  top: 57px;
+  margin: 0 -15px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 13px 50px rgba(0, 0, 0, 0.092); }
   .giveaway-search .form-item {
-    margin-bottom: 15px; }
-    .giveaway-search .form-item:last-child {
-      margin-bottom: 0; }
+    padding: 0; }
+    .giveaway-search .form-item input, .giveaway-search .form-item select {
+      border: none; }
+    .giveaway-search .form-item:nth-child(2) {
+      border-right: 2px solid #F3F4F7; }
+  .giveaway-search label {
+    display: none; }
+  .giveaway-search .search-form {
+    border-bottom: 2px solid #F3F4F7; }
+    .giveaway-search .search-form input {
+      width: 100%;
+      padding: 30px 30px 30px 55px;
+      border-radius: 100px;
+      color: #343a40;
+      font-weight: 500;
+      font-size: 21px; }
+    .giveaway-search .search-form .fa {
+      font-size: 27px; }
+  .giveaway-search .form-selector {
+    padding: 5px 15px; }
+    .giveaway-search .form-selector select {
+      width: 100%;
+      border-radius: 100px;
+      cursor: pointer;
+      color: #343a40;
+      font-weight: 600; }
   .giveaway-search .custom-checkbox {
-    left: 15px; }
-  .giveaway-search .custom-control-label:before, .giveaway-search .custom-control-label:after {
-    top: 0; }
-
-.giveaway-results-main {
-  margin-top: 150px;
-  position: relative; }
-  .giveaway-results-main.results-spacing-sm {
-    margin-top: 100px; }
-  .giveaway-results-main .swiper-button-prev, .giveaway-results-main .swiper-button-next {
-    height: 37px;
-    width: 21px;
-    background-size: cover;
-    outline: none; }
-  .giveaway-results-main .swiper-button-prev {
-    left: 30px;
-    background-image: url("../img/slider-arrow-prev.png"); }
-  .giveaway-results-main .swiper-button-next {
-    right: 30px;
-    background-image: url("../img/slider-arrow-next.png"); }
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: -35px;
+    left: 0; }
+    .giveaway-search .custom-checkbox label {
+      display: block;
+      position: absolute;
+      cursor: pointer; }
 
 @media (min-width: 576px) {
   .giveaway-search {
-    padding: 30px 15px 15px; }
-    .giveaway-search .form-inline label {
-      margin-bottom: 0.5rem;
-      justify-content: left; }
-    .giveaway-search .form-control, .giveaway-search .custom-select {
-      width: 100%; }
-    .giveaway-search .custom-checkbox {
-      margin-top: 16px; } }
+    margin: auto; } }
 
 @media (min-width: 992px) {
   .giveaway-search {
-    top: 65px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 30px;
     border-radius: 100px; }
-  .giveaway-results-main .swiper-button-prev {
-    left: -30px; }
-  .giveaway-results-main .swiper-button-next {
-    right: -30px; } }
-
-@media (min-width: 1200px) {
-  .giveaway-results-main .swiper-button-prev {
-    left: -60px; }
-  .giveaway-results-main .swiper-button-next {
-    right: -60px; } }
+    .giveaway-search .search-form {
+      border-bottom: none;
+      border-right: 2px solid #F3F4F7; }
+      .giveaway-search .search-form input {
+        padding: 50px 30px 50px 55px;
+        font-size: 28px; }
+    .giveaway-search .form-selector {
+      padding-right: 30px; }
+      .giveaway-search .form-selector select {
+        height: 80px;
+        font-size: 18px; }
+    .giveaway-search .custom-checkbox {
+      padding-right: 40px; } }
 
 h1, .h1 {
   font-size: 1.7rem;
