@@ -1,11 +1,12 @@
 $(document).ready(function() {
-  $('[data-toggle="tooltip"]').tooltip('toggleEnabled')
+  $('[data-toggle="tooltip"]').tooltip('toggleEnabled');
 
   console.log('hi');
 });
-$('[data-toggle="tooltip"]').tooltip('toggleEnabled')
 
-console.log('hi2');
+$('[data-toggle="tooltip"]').tooltip('toggleEnabled');
+console.log('hi');
+
 
 // swiper init
 var swiper = new Swiper('.swiper-container', {

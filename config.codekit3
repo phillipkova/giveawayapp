@@ -409,6 +409,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/build/js/plugins/velocity-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/velocity-min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
 	"/build/js/scripts.js": {
 		"ft": 64,
 		"ma": 0,
@@ -2111,6 +2121,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/velocity-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/velocity-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
