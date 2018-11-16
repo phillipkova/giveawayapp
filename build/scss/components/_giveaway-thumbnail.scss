@@ -27,27 +27,15 @@
   &.entered {
     border: 3px solid #45E19F !important;
 
-    &:before {
-      content: "\f00c";
-      font-family: fontawesome;
-      position: absolute;
-      bottom: 1px;
-      right: 3px;
-      z-index: 1;
-      color: white;
-      transform: rotate(-2deg);
-      font-size: 1.1rem;
-    }
-
-    &:after {
-      position: absolute;
+    .giveaway-status-icon {
       content: "";
-      width: 0;
-      height: 0;
-      border-bottom: 45px solid $green;
-      border-left: 45px solid transparent;
+      position: absolute;
+      height: 46px;
+      width: 46px;
       bottom: 0px;
       right: 0px;
+      background-image: url('../img/check-triangle.png');
+      background-size: cover;
     }
   }
 }

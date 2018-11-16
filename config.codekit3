@@ -106,6 +106,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/build/img/check-triangle.png": {
+		"ft": 32768,
+		"iS": 1089,
+		"oA": 0,
+		"oAP": "/img/check-triangle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/build/img/clock.png": {
 		"ft": 32768,
 		"iS": 810,
@@ -405,6 +416,26 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/js/jquery.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/build/js/plugins/swiper-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/plugins/swiper-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/build/js/plugins/swiper.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/swiper-min.js",
 		"oF": 2,
 		"sC": 3,
 		"tS": 0
@@ -2121,6 +2152,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/swiper-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/swiper-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
